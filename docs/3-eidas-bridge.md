@@ -1,6 +1,6 @@
 ---
 id: eidas-bridge
-title: Eidas
+title: Eidas Bridge
 ---
 
 TODO

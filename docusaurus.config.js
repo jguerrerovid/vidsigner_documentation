@@ -24,6 +24,11 @@ const config = {
           path: "./api-json/openapi-vidchain-api.json",
           routeBasePath: "vidchain-openapi",
         },
+        docs: {
+          path: "docs",
+          routeBasePath: "docs",
+          sidebarPath: require.resolve("./sidebarsDocs.js"),
+        },
       },
     ],
   ],
@@ -35,14 +40,6 @@ const config = {
         path: "./api-json/openapi-vidconnect-api.json",
         routeBasePath: "vidconnect-openapi",
         // ... other options
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "docs",
-        path: "docs",
-        sidebarPath: require.resolve("./sidebarsDocs.js"),
       },
     ],
   ],
@@ -59,9 +56,10 @@ const config = {
         },
         items: [
           {
-            to: "/documentation",
-            label: "Documentation",
+            type: "doc",
+            docId: "intro",
             position: "left",
+            label: "Docs",
           },
           {
             label: "OpenAPIs",
