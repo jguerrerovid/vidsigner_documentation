@@ -1,0 +1,10 @@
+[
+  {
+    "name": "VIDchain API",
+    "file": "vidchain-api"
+  },
+  {
+    "name": "VIDconnect API",
+    "file": "vidconnect-api"
+  }
+]

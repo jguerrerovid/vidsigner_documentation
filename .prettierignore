@@ -1,0 +1,6 @@
+/.husky
+/api
+/dist
+/logs
+/node_modules
+/.docusaurus
