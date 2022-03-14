@@ -17,7 +17,7 @@ RUN chown -R nginx:nginx /app && chmod -R 755 /app && \
   touch /var/run/nginx.pid && \
   chown -R nginx:nginx /var/run/nginx.pid
 USER nginx
-COPY --from=base /usr/src/app/build /app/vidchain-docs
+COPY --from=base /usr/src/app/build /app
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
 EXPOSE 3000
 CMD ["nginx", "-g", "daemon off;"]
