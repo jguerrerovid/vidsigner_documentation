@@ -77,15 +77,6 @@ stages:
               steps:
                 - checkout: self
                   fetchDepth: 1
-                - task: Kubernetes@1
-                  displayName: Create/update configmap
-                  inputs:
-                    connectionType: Azure Resource Manager
-                    azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
-                    azureResourceGroup: $(azureResourceGroup)
-                    kubernetesCluster: $(kubernetesCluster)
-                    command: apply
-                    arguments: -f $(configMap) -n $(namespace)
                 - task: KubernetesManifest@0
                   displayName: Create/update deployment
                   inputs:
