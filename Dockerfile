@@ -1,19 +1,13 @@
-# Multi-stage build that:
-#   - creates a production build of the frontend
-#   - serves the build with nginx
-
-## Stage 1: install dependencies and copy files
-FROM node:16.13.0-alpine3.14@sha256:3bca55259ada636e5fee8f2836aba7fa01fed7afd0652e12773ad44af95868b9 as base
+FROM node:16.13.2-alpine3.15@sha256:2f50f4a428f8b5280817c9d4d896dbee03f072e93f4e0c70b90cc84bd1fcfe0d as base
 WORKDIR /usr/src/app
-COPY ./package.json /usr/src/app/package.json
-COPY ./yarn.lock /usr/src/app/yarn.lock
+COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile --silent && yarn cache clean
-COPY . /usr/src/app/
-ARG REACT_APP_ENV
-RUN yarn build && yarn compress
+COPY . .
+ENV NODE_OPTIONS=--max_old_space_size=8048
+RUN yarn build
 
 # Stage 2: run nginx
-FROM nginx:1.19.6-alpine@sha256:c2ce58e024275728b00a554ac25628af25c54782865b3487b11c21cafb7fabda
+FROM nginx:1.21.3-alpine@sha256:1ff1364a1c4332341fc0a854820f1d50e90e11bb0b93eb53b47dc5e10c680116
 RUN mkdir -p /app
 WORKDIR /app
 RUN chown -R nginx:nginx /app && chmod -R 755 /app && \
@@ -23,7 +17,8 @@ RUN chown -R nginx:nginx /app && chmod -R 755 /app && \
   touch /var/run/nginx.pid && \
   chown -R nginx:nginx /var/run/nginx.pid
 USER nginx
-COPY --from=base /usr/src/app/build /app/users-onboarding
+COPY --from=base /usr/src/app/build /app/vidchain-docs
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
 EXPOSE 3000
 CMD ["nginx", "-g", "daemon off;"]
+
