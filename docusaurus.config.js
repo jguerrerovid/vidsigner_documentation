@@ -9,7 +9,7 @@ const config = {
   title: "VIDchain documentation",
   tagline: "Welcome to VIDchain documentation",
   url: "https://www.validatedid.com/vidchain",
-  baseUrl: "/documentation/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.svg",
