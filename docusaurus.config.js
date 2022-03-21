@@ -15,7 +15,7 @@ const config = {
   favicon: "img/favicon.svg",
   organizationName: "Validated ID",
   projectName: "vidchain-documentation",
-  trailingSlash: true,
+  trailingSlash: false,
   presets: [
     [
       "docusaurus-preset-openapi",
