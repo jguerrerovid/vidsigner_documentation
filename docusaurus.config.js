@@ -9,7 +9,7 @@ const config = {
   title: "VIDchain documentation",
   tagline: "Welcome to VIDchain documentation",
   url: "https://dev.vidchain.net",
-  baseUrl: "/documentation/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.svg",
@@ -74,9 +74,9 @@ const config = {
       footer: {
         copyright: `Copyright © Validated ID`,
       },
-      theme: {
-        customCss: [require.resolve("./src/css/custom.css")],
-      },
+      // theme: {
+      //   customCss: [require.resolve("./src/css/custom.css")],
+      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
