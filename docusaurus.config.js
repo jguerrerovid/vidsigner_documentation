@@ -8,14 +8,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "VIDchain documentation",
   tagline: "Welcome to VIDchain documentation",
-  url: "https://www.validatedid.com",
+  url: "https://dev.vidchain.net",
   baseUrl: "/documentation/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.svg",
   organizationName: "Validated ID",
   projectName: "vidchain-documentation",
-  trailingSlash: false,
+  trailingSlash: true,
   presets: [
     [
       "docusaurus-preset-openapi",
