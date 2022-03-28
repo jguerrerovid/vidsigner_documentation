@@ -1,6 +1,6 @@
 ---
 id: vidchain
-title: VIDchain
+title: Getting into VIDchain
 ---
 
 # VIDchain
@@ -12,7 +12,7 @@ VIDchain is an SSI service that is composed of different building blocks:
 - **VIDcredentials**, a service that allows VC management (request and sending credentials).
 - **DID SIOP library**, a Typescript library that you can use from your app to exchange credentials with the VIDwallet.
 
-![vidchain-components](_media/vidchain-components.jpg)
+![vidchain-components](../_media/vidchain-components.jpg)
 
 # What can I do with VIDchain?
 
@@ -39,20 +39,20 @@ This document provides information on how to use the VIDchain API to:
 
 The guide is divided in two parts: the **configuration** part and the **tutorial**. The former provides an overview of the items needed in order to be ready to start the tutorial. Therefore, please read the requirements first so as to get ready for the integration.
 
-- Step 1: [Setting things up & other requirements](/subsites/requirements.md)
+- Step 1: [Setting things up & other requirements](/docs/VIDchain/requirements)
 
-  - [Setting up your OIDC client](/subsites/requirements.md#set-up-your-oidc-client)
-  - [Create your entity DID](/subsites/requirements.md#create-your-entity-did)
-  - [Accessing the API: API Bearer Token Authentication](/subsites/requirements.md#client-id-and-entity-session-key-registration-prod-api-only)
-  - [Define the contents of the Verifiable Credentials](/subsites/requirements.md#define-the-contents-of-the-verifiable-credentials)
+  - [Setting up your OIDC client](/docs/VIDchain/requirements#set-up-your-oidc-client)
+  - [Create your entity DID](/docs/VIDchain/requirements#create-your-entity-did)
+  - [Accessing the API: API Bearer Token Authentication](/docs/VIDchain/requirements#client-id-and-entity-session-key-registration-prod-api-only)
+  - [Define the contents of the Verifiable Credentials](/docs/VIDchain/requirements#define-the-contents-of-the-verifiable-credentials)
 
 - Step 2: Web or mobile? Once you have set things up, you can interact with the wallet from your backend or directly from your mobile app:
-  - Integrate your [web or webapp with VIDchain](/subsites/tutorial.md)
-    - [OIDC flow for DID Auth](/subsites/tutorial.md#oidc-flow-for-did-auth)
-    - [Issue Credentials](/subsites/tutorial.md#issue-credentials)
-    - [Request and Verify credentials](/subsites/tutorial.md#request-and-verify-credentials)
-    - [Present and Verify credentials](/subsites/tutorial.md#present-and-verify-credentials)
-  - Integrate your [mobile app using DID SIOP](/4-sioplib.md)
+  - Integrate your [web or webapp with VIDchain](/docs/VIDchain/tutorial)
+    - [OIDC flow for DID Auth](/docs/VIDchain/tutorial#oidc-flow-for-did-auth)
+    - [Issue Credentials](/docs/VIDchain/tutorial#issue-credentials)
+    - [Request and Verify credentials](/docs/VIDchain/tutorial#request-and-verify-credentials)
+    - [Present and Verify credentials](/docs/VIDchain/tutorial#present-and-verify-credentials)
+  - Integrate your [mobile app using DID SIOP](../4-sioplib.md)
 
 # Get the VIDwallet app
 
@@ -75,7 +75,7 @@ And also a top right (+) button that you can use to self-issue your first Verifi
 
 <div align='center'>
 
-![main-kyc](_media/main-kyc.jpg ":size=30%")
+![main-kyc](../_media/main-kyc.jpg ":size=30%")
 
 </div>
 
