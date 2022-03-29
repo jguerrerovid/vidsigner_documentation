@@ -28,6 +28,9 @@ const config = {
           routeBasePath: "docs",
           sidebarPath: require.resolve("./sidebarsDocs.js"),
         },
+        theme: {
+          customCss: require.resolve("./src/css/custom.css"),
+        },
       },
     ],
   ],
@@ -72,9 +75,6 @@ const config = {
       },
       footer: {
         copyright: `Copyright © Validated ID`,
-      },
-      theme: {
-        customCss: [require.resolve("./src/css/custom.css")],
       },
       prism: {
         theme: lightCodeTheme,
