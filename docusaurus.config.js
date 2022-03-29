@@ -73,9 +73,9 @@ const config = {
       footer: {
         copyright: `Copyright © Validated ID`,
       },
-      // theme: {
-      //   customCss: [require.resolve("./src/css/custom.css")],
-      // },
+      theme: {
+        customCss: [require.resolve("./src/css/custom.css")],
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
