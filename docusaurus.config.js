@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "VIDchain documentation",
   tagline: "Welcome to VIDchain documentation",
-  url: "https://dev.vidchain.net",
+  url: "https://docs.vidchain.net",
   baseUrl: "/",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.svg",
