@@ -8,7 +8,6 @@ html[data-theme='dark'] .navbar .navbar__logo { content: url(/img/VIDchain_H_DAR
     --ifm-color-primary-light: rgb(70, 203, 174);
     --ifm-color-primary-lighter: rgb(102, 212, 189);
     --ifm-color-primary-lightest: rgb(146, 224, 208);
-    --openapi-code-dim-light: #aaaaaa;
-    --openapi-monaco-background-color-dark: #aaaaaa;
+    --openapi-code-dim-light: #aaaaa9;
     --ifm-code-font-size: 95%;
 }
