@@ -9,5 +9,10 @@ html[data-theme='dark'] .navbar .navbar__logo { content: url(/img/VIDchain_H_DAR
     --ifm-color-primary-lighter: rgb(102, 212, 189);
     --ifm-color-primary-lightest: rgb(146, 224, 208);
     --openapi-code-dim-light: #aaaaa9;
+    --openapi-monaco-background-color-dark: #aaaaa9;
     --ifm-code-font-size: 95%;
+}
+
+.token.cdata {
+    color: #aaaaa9;
 }
