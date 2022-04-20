@@ -13,7 +13,7 @@ You can use the component `did-siop` to request credentials from the VIDwallet. 
 
 did-siop is a library written in Typescript that implements the SIOP (Self-Issued OpenID Provider) flavour using DIDs.
 
-![siop](_media/siop.png)
+![siop](../_media/siop.png)
 
 The current DID Auth implementation follows DID SIOP Auth, which uses two JSON Web Tokens (JWT) signed by both two parties DID keys in a double challenge-response authentication. It is also supported the protocol to exchange Verifiable Credentials as part of the ID token response.
 
@@ -33,7 +33,7 @@ yarn add @validatedid/did-auth
 
 This is the high-level flow of the steps required to exchange credentials:
 
-![siop-vc-exchange](_media/siop-vc-exchange.png)
+![siop-vc-exchange](../_media/siop-vc-exchange.png)
 
 Steps:
 

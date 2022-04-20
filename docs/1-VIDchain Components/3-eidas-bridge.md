@@ -8,18 +8,18 @@ The eIDAS bridge consists of an API that allows you to sign and validate credent
 
 ## Step 1: certificate storage for did association
 
-![step1-eidas](_media/step1-eidas.png)
+![step1-eidas](../_media/step1-eidas.png)
 
 The issuer sends the certificate and associates it to the DID that will be used as Verifiable Credential (VC) issuer. The API stores the certificate in Confidential Storage.
 
 ##  Step 2: signature with a QEC
 
-![step2-eidas](_media/step2-eidas.png)
+![step2-eidas](../_media/step2-eidas.png)
 The issuer requests to sign a VC using his/her previously stored certificate and the API provides a VC containing a CAdES signature.
 
 ##  Step 3: QEC signature validation
 
-![step3-eidas](_media/step3-eidas.png)
+![step3-eidas](../_media/step3-eidas.png)
 
 The verifier sends a VC with CAdES signature to be validated and the API provides the validation result.
 
@@ -31,7 +31,7 @@ Since the project finished at the end of June 2021, VIDchain API has taken the o
 
 ## eIDAS Bridge and Business Process Value
 
-![eidas-vc](_media/eidas-vc.jpeg)
+![eidas-vc](../_media/eidas-vc.jpeg)
 
 As pioneers and defenders of the SSI paradigm, we are the first ones who wish to create the necessary trust environment so that verifiable credentials can be created with a Level of Assurance&Credibility that allows public and private organizations to start accepting them as elements well supported by the models of trust already covered by the eIDAS(v1) While new eIDASv2 gets formally approved.
 
