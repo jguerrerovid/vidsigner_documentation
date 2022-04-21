@@ -24,6 +24,7 @@ const config = {
           routeBasePath: "vidchain-openapi",
         },
         docs: {
+          sidebarCollapsed: false,
           path: "docs",
           routeBasePath: "docs",
           sidebarPath: require.resolve("./sidebarsDocs.js"),
@@ -50,7 +51,7 @@ const config = {
     /** @type {import('docusaurus-preset-openapi').ThemeConfig} */
     ({
       hideableSidebar: true,
-      autoCollapseSidebarCategories: true,
+      autoCollapseSidebarCategories: false,
       navbar: {
         logo: {
           alt: "VIDchain Logo",
