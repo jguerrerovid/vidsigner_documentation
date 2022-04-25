@@ -3,29 +3,31 @@ id: intro
 title: VIDchain
 ---
 
-
 # VIDchain
 
-VIDchain is an SSI service that is composed of different building blocks:
+VIDchain is a product of [Validated ID](https://www.validatedid.com/), a Spanish Qualified Trust Service Provider, providing Self-Sovereign Identity (SSI) and related services. 
+- bla bla ssi 
+- services for customers 
+- 
 
-- **VIDwallet**, an app for users to hold W3C Verifiable Credentials (VC) and generate and manage user DID.
-- **VIDconnect**, an OpenID Connect provider that is able to perform DID authentication.
+
+VIDchain is composed of different building blocks depicted in the architecture figure and listed below:
+
+- **VIDchain API**, the public API of VIDchain used for various actions. 
+- **VIDwallet**, an app for users to hold W3C Verifiable Credentials (VC) and generate and manage user DIDs.
+- **VIDconnect**, an OpenID Connect provider that is able to perform DID authentication. **DID SIOP library**, a Typescript library that you can use from your app to exchange credentials with the VIDwallet.
 - **VIDcredentials**, a service that allows VC management (request and sending credentials).
-- **DID SIOP library**, a Typescript library that you can use from your app to exchange credentials with the VIDwallet.
 
-![vidchain-components](_media/vidchain-components.jpg)
+![vidchain-components](_media/architecture.png)
 
-# What can I do with VIDchain?
+# VIDchain Features 
 
-Easy!
-
-You can:
 
 - easily integrate **passwordless authentication using SSI** on your **web**, **webapp** or **mobile app**.
 - easily **issue** any kind of **verifiable credentials** to your users.
 - easily **request** credentials to your users, either to authenticate or authorize them.
 
-We'll show you how.
+
 
 # This guide
 
@@ -55,30 +57,7 @@ The guide is divided in two parts: the **configuration** part and the **tutorial
     - [Present and Verify credentials](/docs/VIDchain/tutorial#present-and-verify-credentials)
   - Integrate your [mobile app using DID SIOP](../4-sioplib.md)
 
-# Get the VIDwallet app
 
-As a user, in order to create keys, receive credentials, use them and be able to complete the tutorial you will need a wallet.
-
-You can download the VIDchain reference wallet here:
-
-- [Android Version from Google Play](https://play.google.com/store/apps/details?id=com.validatedid.wallet)
-
-Once installed, the first time you open the app you’ll be asked to define a PIN code or to authenticate using your biometrics (used to encrypt the keys). As soon as you open the wallet, your keys will be created.
-
-The application has four views:
-
-- **Credentials**: list of all the credentials you own and store in your wallet.
-- **Login**: where you can scan a QR code presented by a web page the user asks to authenticate in.
-- **Notifications**: list of all the notifications you receive from a credentials provider, like .
-- **Settings**
-
-And also a top right (+) button that you can use to self-issue your first Verifiable Credentials.
-
-<div align='center'>
-
-![main-kyc](_media/main-kyc.jpg ":size=30%")
-
-</div>
 
 # Relevant links:
 
