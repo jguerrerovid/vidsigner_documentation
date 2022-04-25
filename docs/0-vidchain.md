@@ -3,15 +3,18 @@ id: intro
 title: VIDchain
 ---
 
-# VIDchain
+# VIDchain Overview
 
-VIDchain is a product of [Validated ID](https://www.validatedid.com/), a Spanish Qualified Trust Service Provider, providing Self-Sovereign Identity (SSI) and related services. SSI is a rather new concept for managing digital identities with the main goal to return the control over identity data back to the users. 
+VIDchain is a product of [Validated ID](https://www.validatedid.com/), a Spanish Qualified Trust Service Provider, providing Self-Sovereign Identity (SSI) and related services. SSI is a rather new concept for managing digital identities with the main goal to return the control over identity data back to the users. If you are interested in further explore SSI and its potential please checkout our [SSI Whitepaper](https://www.validatedid.com/vidchain).
+
+This documentation provides information of VIDchain and its components for everybody who seeks more information on them. Additionally, this documentation also provides integration guides 
+
+# VIDchain Features
 
 
-- bla bla ssi 
-- services for customers 
-- 
-
+- easily integrate **passwordless authentication using SSI** on your **web**, **webapp** or **mobile app**.
+- easily **issue** any kind of **verifiable credentials** to your users.
+- easily **request** credentials to your users, either to authenticate or authorize them.
 
 VIDchain is composed of different building blocks depicted in the architecture figure and listed below:
 
@@ -22,12 +25,6 @@ VIDchain is composed of different building blocks depicted in the architecture f
 
 ![vidchain-components](_media/architecture.png)
 
-# VIDchain Features 
-
-
-- easily integrate **passwordless authentication using SSI** on your **web**, **webapp** or **mobile app**.
-- easily **issue** any kind of **verifiable credentials** to your users.
-- easily **request** credentials to your users, either to authenticate or authorize them.
 
 
 
