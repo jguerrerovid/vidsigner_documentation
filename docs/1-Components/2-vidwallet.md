@@ -24,6 +24,6 @@ And also a top right (+) button that you can use to self-issue your first Verifi
 
 <div align='center'>
 
-![main-kyc](_media/main-kyc.jpg ":size=30%")
+![main-kyc](../_media/main-kyc.jpg ":size=30%")
 
 </div>
