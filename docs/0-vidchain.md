@@ -5,7 +5,9 @@ title: VIDchain
 
 # VIDchain
 
-VIDchain is a product of [Validated ID](https://www.validatedid.com/), a Spanish Qualified Trust Service Provider, providing Self-Sovereign Identity (SSI) and related services. 
+VIDchain is a product of [Validated ID](https://www.validatedid.com/), a Spanish Qualified Trust Service Provider, providing Self-Sovereign Identity (SSI) and related services. SSI is a rather new concept for managing digital identities with the main goal to return the control over identity data back to the users. 
+
+
 - bla bla ssi 
 - services for customers 
 - 
@@ -55,7 +57,7 @@ The guide is divided in two parts: the **configuration** part and the **tutorial
     - [Issue Credentials](/docs/VIDchain/tutorial#issue-credentials)
     - [Request and Verify credentials](/docs/VIDchain/tutorial#request-and-verify-credentials)
     - [Present and Verify credentials](/docs/VIDchain/tutorial#present-and-verify-credentials)
-  - Integrate your [mobile app using DID SIOP](../4-sioplib.md)
+  - Integrate your [mobile app using DID SIOP](../4-sioplib.md) <!-- FIXME -->
 
 
 
