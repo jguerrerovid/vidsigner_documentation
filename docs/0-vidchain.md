@@ -3,23 +3,34 @@ id: intro
 title: VIDchain
 ---
 
-# VIDchain Overview
+# VIDchain
 
 VIDchain is a product of [Validated ID](https://www.validatedid.com/), a Spanish Qualified Trust Service Provider, providing Self-Sovereign Identity (SSI) and related services. SSI is a rather new concept for managing digital identities with the main goal to return the control over identity data back to the users. If you are interested in further explore SSI and its potential please checkout our [SSI Whitepaper](https://www.validatedid.com/vidchain).
 
-This documentation provides information of VIDchain and its components for everybody who seeks more information on them. Additionally, this documentation also provides integration guides 
-
-# VIDchain Features
+The purpose of this documentation is twofold starting with first, a presentation of a general description and additionally a detailed description about the components. Second, integration guides are presented mainly for software architects and developers that aim to integrate VIDchain components into their systems. 
 
 
-- easily integrate **passwordless authentication using SSI** on your **web**, **webapp** or **mobile app**.
-- easily **issue** any kind of **verifiable credentials** to your users.
-- easily **request** credentials to your users, either to authenticate or authorize them.
+## Main Features
+
+To underline the advantages of using VIDchain as SSI services provider, we list following the main features of our services. 
+
+- user is in control over their own identity data 
+- passwordless SSI authentication flow
+- integration with SSI on your **web**, **webapp** or **mobile app**
+- managing credentials such as **issue** any kind of **verifiable credentials** to your users
+- easily **request** credentials to your users, either to authenticate or authorize them
+- adding legal value on top of VC credentials 
+- legal binding to users 
+- creating credentials from digital certificates (X509 certificates)
+
+
+## Components Overview 
 
 VIDchain is composed of different building blocks depicted in the architecture figure and listed below:
 
 - **VIDchain API**, the public API of VIDchain used for various actions. 
 - **VIDwallet**, an app for users to hold W3C Verifiable Credentials (VC) and generate and manage user DIDs.
+- **VIDcredentials**, a library that is used for creating, signing and verifying verifiable credentials, including schema and revocation management. 
 - **VIDconnect**, an OpenID Connect provider that is able to perform DID authentication. **DID SIOP library**, a Typescript library that you can use from your app to exchange credentials with the VIDwallet.
 - **VIDcredentials**, a service that allows VC management (request and sending credentials).
 
@@ -27,7 +38,7 @@ VIDchain is composed of different building blocks depicted in the architecture f
 
 
 
-
+<!-- 
 # This guide
 
 This document provides information on how to use the VIDchain API to:
@@ -54,11 +65,13 @@ The guide is divided in two parts: the **configuration** part and the **tutorial
     - [Issue Credentials](/docs/VIDchain/tutorial#issue-credentials)
     - [Request and Verify credentials](/docs/VIDchain/tutorial#request-and-verify-credentials)
     - [Present and Verify credentials](/docs/VIDchain/tutorial#present-and-verify-credentials)
-  - Integrate your [mobile app using DID SIOP](../4-sioplib.md) <!-- FIXME -->
+  - Integrate your [mobile app using DID SIOP](../4-sioplib.md) 
+
+-->
 
 
-
-# Relevant links:
+<!-- move links to proper places -->
+## Relevant links:
 
 - [VIDchain demo webapps that show how to integrate with VIDchain APIs](https://github.com/validatedid/VIDchain-demo-v2)
 - [VIDchain OpenAPI specs](https://api.vidchain.net/api/v1/api-docs/)
