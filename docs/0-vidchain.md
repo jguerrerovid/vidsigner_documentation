@@ -5,31 +5,31 @@ title: VIDchain
 
 # VIDchain
 
-VIDchain is a product of [Validated ID](https://www.validatedid.com/), a Spanish Qualified Trust Service Provider, providing Self-Sovereign Identity (SSI) and related services. SSI is a rather new concept for managing digital identities with the main goal to return the control over identity data back to the users. If you are interested in further explore SSI and its potential please checkout our [SSI Whitepaper](https://www.validatedid.com/vidchain).
+VIDchain is a product of [Validated ID](https://www.validatedid.com/), a Spanish Qualified Trust Service Provider, providing Self-Sovereign Identity (SSI) and related services. SSI is a rather new concept for managing digital identities with the main goal to return the control over identity data back to the users. If you are interested in further explore SSI and its potential please check out our [SSI Whitepaper](https://www.validatedid.com/vidchain).
 
 The purpose of this documentation is twofold starting with first, a presentation of a general description and additionally a detailed description about the components. Second, integration guides are presented mainly for software architects and developers that aim to integrate VIDchain components into their systems. 
 
 
 ## Main Features
 
-To underline the advantages of using VIDchain as SSI services provider, we list following the main features of our services. 
+To highlight the advantages of using VIDchain as SSI services provider, we list following the main features of our services. 
 
-- user is in control over their own identity data 
-- passwordless SSI authentication flow
-- integration with SSI on your **web**, **webapp** or **mobile app**
-- managing credentials such as **issue** any kind of **verifiable credentials** to your users
-- easily **request** credentials to your users, either to authenticate or authorize them
-- adding legal value on top of VC credentials 
-- legal binding to users 
-- creating credentials from digital certificates (X509 certificates)
+- By using our services including the identity wallet, users are in **full control over their own identity data**.
+- Our provides services are **fully GDPR-compliant**. By utilizing our services, customers will not have to worry about GDPR compliance.  
+- SSI vendors often depend on a distributed ledger (DL) or blockchain network. VIDchain offers flexibility by **being fully ledger agnostic**. In fact, VIDchain services can operate even without DL or blockchain but nevertheless, VIDchain is integrated with several DLTs. 
+- VIDchain offers a **passwordless authentication flow**, which increases not only the user-experience but also the security since users tend to resuse username-password combinations or use-easy-to-guess passwords. 
+- VIDchain services can be **integrated and used on different platforms** such as in the web or on a webapp or mobile app.
+- VIDchain offers a service to **manage and handle credentials including, creating, signing, issuing, storing, revoking, exchanging and presenting verifiable credentials**.
+- VIDchain **binds legal entities to verifiable credentials**. Legal entities such as natural and legal persons are often represented by X509 certificates. This binding is achieved by our so-called eIDAS bridge. By sealing the verifiable credential with a qualified certificate, also **legal value is added to the verifiable credential** and can be verified afterwards.
+- Users might own a personal certificate containing the users' attributes. VIDchain offers a service to **transform a X509 certificate into a valid verifiable credential**. 
 
 
 ## Components Overview 
 
 VIDchain is composed of different building blocks depicted in the architecture figure and listed below:
 
-- **VIDchain API**, the public API of VIDchain used for various actions. 
-- **VIDwallet**, an app for users to hold W3C Verifiable Credentials (VC) and generate and manage user DIDs.
+- [VIDchain API](1-Components/0-vidchain-api.md), the public API of VIDchain used for various actions.
+- [VIDwallet](1-Components/1-vidconnect.md), an app for users to hold W3C Verifiable Credentials (VC) and generate and manage user DIDs.
 - **VIDcredentials**, a library that is used for creating, signing and verifying verifiable credentials, including schema and revocation management. 
 - **VIDconnect**, an OpenID Connect provider that is able to perform DID authentication. **DID SIOP library**, a Typescript library that you can use from your app to exchange credentials with the VIDwallet.
 - **VIDcredentials**, a service that allows VC management (request and sending credentials).
