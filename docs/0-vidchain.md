@@ -33,11 +33,9 @@ To highlight the advantages of using VIDchain as SSI services provider, we list 
 
 VIDchain is composed of different building blocks depicted in the architecture figure and listed below:
 
-<!-- - [VIDchain API](1-Components/0-vidcredential.md), the public API of VIDchain used for various actions. -->
-
+- [VIDcredentials](1-Components/0-vidcredential.md), a library that is used for creating, signing and verifying verifiable credentials, including schema and revocation management.
 - [VIDconnect](1-Components/1-vidconnect.md), an OpenID Connect provider that is able to perform DID authentication. DID SIOP library, a Typescript library that you can use from your app to exchange credentials with the VIDwallet.
 - [VIDwallet](1-Components/2-vidwallet.md), an app for users to hold W3C Verifiable Credentials (VC) and generate and manage user DIDs.
-- [VIDcredentials](1-Components/0-vidcredential.md), a library that is used for creating, signing and verifying verifiable credentials, including schema and revocation management.
 - [eIDAS Bridge](1-Components/3-eidas-bridge.md), the eIDAS Bridge is a project that aims to bridge legal entities based on X509 certificates with W3C based verfiable credentials.
 
 ![vidchain-components](_media/architecture.png)
@@ -80,6 +78,7 @@ The guide is divided in two parts: the **configuration** part and the **tutorial
 - [Validated ID Website](https://www.validatedid.com)
 - [VIDchain Website](https://www.validatedid.com/vidchain)
 - [VIDchain demo webapps that show how to integrate with VIDchain APIs](https://github.com/validatedid/VIDchain-demo-v2)
-- [VIDchain OpenAPI Specification](https://api.vidchain.net/api/v1/api-docs/)
+- [VIDchain OpenAPI Specification](https://docs.vidchain.net/vidchain-openapi)
+- [VIDconnect OpenAPI Specification](https://docs.vidchain.net/vidconnect-openapi)
 - [VIDchain Demo Site](https://try.vidchain.net/demo)
 <!-- - [VIDwallet APK for Android](https://drive.google.com/file/d/1En7_nhd0ANb3ZZe3DVaMPnmqlRfK8zYC/view?usp=sharing) -->
