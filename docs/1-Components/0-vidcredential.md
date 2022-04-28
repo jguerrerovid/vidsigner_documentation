@@ -1,6 +1,6 @@
 ---
-id: vidchain-api
-title: VIDchain API
+id: vidcredential
+title: VIDcredential
 ---
 
 TODO
