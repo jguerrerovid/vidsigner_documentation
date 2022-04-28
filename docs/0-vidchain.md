@@ -34,8 +34,8 @@ To highlight the advantages of using VIDchain as SSI services provider, we list 
 VIDchain is composed of different building blocks depicted in the architecture figure and listed below:
 
 - [VIDcredentials](1-Components/0-vidcredential.md), this component's main purpose is to handle credentials and credential related data. Handling credentials includes creating, signing and verifying verifiable credentials, but also managing schemas and the revocation management.
-- [VIDconnect](1-Components/1-vidconnect.md), an OpenID Connect provider that is able to perform DID authentication. DID SIOP library, a Typescript library that you can use from your app to exchange credentials with the VIDwallet.
-- [VIDwallet](1-Components/2-vidwallet.md), an app for users to hold W3C Verifiable Credentials (VC) and generate and manage user DIDs.
+- [VIDconnect](1-Components/1-vidconnect.md), an OpenID Connect provider that is able to perform a DID authentication process. The OpenID Connect SIOP library, a Typescript library, that you can use from your app to exchange credentials with the VIDwallet.
+- [VIDwallet](1-Components/2-vidwallet.md), a mobile application used by end-users with the main purpose to manage and store their key matrial and personal information such as identifiers and credentials. 
 - [eIDAS Bridge](1-Components/3-eidas-bridge.md), the eIDAS Bridge is a project that aims to bridge legal entities based on X509 certificates with W3C based verfiable credentials.
 
 ![vidchain-components](_media/architecture.png)
