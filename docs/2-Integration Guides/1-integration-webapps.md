@@ -167,3 +167,5 @@ On the following schema we see the flow required to issue a credential using VID
 3. The user’s wallet receives a notification in wallet.
 4. The user accepts the credential and it’s stored in the wallet.
 
+## References
+- [VIDchain demo webapps that show how to integrate with VIDchain APIs](https://github.com/validatedid/VIDchain-demo-v2)
