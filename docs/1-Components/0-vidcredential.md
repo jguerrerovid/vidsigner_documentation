@@ -3,4 +3,6 @@ id: vidcredential
 title: VIDcredential
 ---
 
-TODO
+
+
+![vidcredentials](../_media/vidcredentials.png)
