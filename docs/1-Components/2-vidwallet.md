@@ -7,10 +7,19 @@ An identity wallet represents one of the core components in an SSI system and so
 
 VIDwallet is designed to act ledger-agnostic meaning that it does not rely on a single DLT or blockchain network. VIDwallet supports already several DLTs and blockchain networks such as EBSI and Ethereum to just name two but it can also be used without distributed network utilizing the DID key[^1] method. Additionally, it does not only supports EBSI identifiers but is also fully EBSI compliant[^2] with their services. 
 
-<!--
-As a user, in order to create keys, receive credentials, use them and be able to complete the tutorial you will need a wallet.
--->
+## Features 
+- Users that use VIDwallet are in **full control over their own data** including identifiers, key material and credentials. 
+- VIDwallet is utilized to **store and mange personal information** in form of credentials. 
+- The VIDwallet also **manages key material** of users and stores them in a tamper-proof storage namely the secure element of the mobile phone. 
+- VIDwallet **provides an eKYC service** in which the users can use their legal identity card or passport in a KYC process resulting in an identity credential that has a strong data-to-user-binding. 
+- The **personal data are securely stored in encrypted form** so that only the user can access them by following DIF's confidential storage specification[^3]. 
+- VIDwallet **supports a variety of DID methods** even without depency to a DLT or blockchain network. 
+- VIDwallet offers a service, VIDcerts, that **enables the transformation of X509 certificates into VCs** and stores the in the wallet. 
+- VIDwallet fulfilled the EBSI compliance tests and is **officially EBSI compliant** and listed as EBSI compliant wallet solution. 
+- The wallet application is **available for both Apple and Android devices**. 
 
+
+## Get VIDwallet 
 VIDwallet is available for Android and Apple smartphones:
 
 - [Android Version](https://play.google.com/store/apps/details?id=com.validatedid.wallet)
@@ -35,3 +44,5 @@ And also a top right (+) button that you can use to self-issue your first Verifi
 
 [^1]: https://w3c-ccg.github.io/did-method-key/ 
 [^2]: https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Conformant+wallets#find-a-wallet 
+[^3]: https://identity.foundation/edv-spec/ 
+
