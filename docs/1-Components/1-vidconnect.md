@@ -3,12 +3,15 @@ id: vidconnect
 title: VIDconnect
 ---
 
-VIDconnect is the component that implements the identity protocols aiming to "connect" VIDchain users to other users and services. In particular, Validated ID has developed its own implementation of the did-auth protocol used to authenticate a user towards a relaying party using DIDs[^1]. 
+VIDconnect is the component that implements the identity protocols aiming to "connect" VIDchain users to other users and services. In particular, Validated ID has developed its own implementation of the did-auth protocol used to authenticate a user towards a relaying party using DIDs[^1]. Also, VIDconnect implements the DID SIOP[^2] (Self-Issued OpenID Provider) authentication process. 
 
+
+
+<!--
 The current authentication process follows the DID SIOP[^2] (Self-Issued OpenID Provider) authentication flow, which uses JSON Web Tokens (JWT) signed by both parties' DID keys during a mutual authentication flow. It also supports the protocol to exchange Verifiable Credentials[^3] (VCs) as part of the identity token response.
 
 Current version supports only ES256k (and ES256K-R) algorithm (the EC secp256k1).
-
+-->
 
 ![vidconnect](../_media/vidconnect.png)
 
