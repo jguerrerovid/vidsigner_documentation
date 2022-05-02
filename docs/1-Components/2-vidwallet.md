@@ -21,8 +21,36 @@ VIDwallet is designed to act ledger-agnostic meaning that it does not rely on a 
 
 ## VIDwallet Screens 
 
+The application has five views:
+
+- **Credentials**: list of all the credentials you own and store in your wallet.
+- **Login**: where you can scan a QR code presented by a web page the user asks to authenticate in.
+- **Notifications**: list of all the notifications you receive from a credentials provider, like .
+- **Settings**
+
+![main-screen](../_media/start-screen.png)
 
 
+![main-screen](../_media/did-screen.png)
+
+![main-screen](../_media/scanqr-screen.png)
+
+![main-screen](../_media/messagecenter-screen.png)
+
+![main-screen](../_media/settings-screen.png)
+
+
+
+
+<!--
+And also a top right (+) button that you can use to self-issue your first Verifiable Credentials.
+
+<div align='center'>
+
+![main-kyc](../_media/main-kyc.jpg ":size=30%")
+
+</div>
+-->
 
 ## Get VIDwallet 
 VIDwallet is available for Android and Apple smartphones:
@@ -32,28 +60,12 @@ VIDwallet is available for Android and Apple smartphones:
 
 ## Test VIDwallet
 
-Validated ID offers a tutorial for the users to get familiar with VIDwallet. The user journey of this tutorial focuses on a student that has a large family and wants to first, get a big family credential using the identity credential credential at the government page. And second, use this big family credential to get a discount on the studying fees. The tutorial describes all steps starting with the installation of the mobile app up to requesting the discount at the university. 
+Validated ID offers a tutorial for the users to get familiar with VIDwallet. The user journey of this tutorial focuses on a student that has a large family and wants to first, get a big family credential using the identity credential at the government page. And second, use this big family credential to get a discount on the studying fees. The tutorial describes all steps starting with the installation of the mobile app up to requesting the discount at the university. 
 
-Start the tutorial here: https://try.vidchain.net/demo/tutorial 
+[Start Tutorial](https://try.vidchain.net/demo/tutorial)
 
-<!-- 
-Once installed, the first time you open the app you’ll be asked to define a PIN code or to authenticate using your biometrics (used to encrypt the keys). As soon as you open the wallet, your keys will be created.
---> 
 
-The application has four views:
 
-- **Credentials**: list of all the credentials you own and store in your wallet.
-- **Login**: where you can scan a QR code presented by a web page the user asks to authenticate in.
-- **Notifications**: list of all the notifications you receive from a credentials provider, like .
-- **Settings**
-
-And also a top right (+) button that you can use to self-issue your first Verifiable Credentials.
-
-<div align='center'>
-
-![main-kyc](../_media/main-kyc.jpg ":size=30%")
-
-</div>
 
 [^1]: https://w3c-ccg.github.io/did-method-key/ 
 [^2]: https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Conformant+wallets#find-a-wallet 
