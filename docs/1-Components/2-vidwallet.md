@@ -19,13 +19,26 @@ VIDwallet is designed to act ledger-agnostic meaning that it does not rely on a 
 - The wallet application is **available for both Apple and Android devices**. 
 
 
+## VIDwallet Screens 
+
+
+
+
 ## Get VIDwallet 
 VIDwallet is available for Android and Apple smartphones:
 
 - [Android Version](https://play.google.com/store/apps/details?id=com.validatedid.wallet)
 - [iOS Version](https://apps.apple.com/us/app/vidwallet/id1554340592)
 
+## Test VIDwallet
+
+Validated ID offers a tutorial for the users to get familiar with VIDwallet. The user journey of this tutorial focuses on a student that has a large family and wants to first, get a big family credential using the identity credential credential at the government page. And second, use this big family credential to get a discount on the studying fees. The tutorial describes all steps starting with the installation of the mobile app up to requesting the discount at the university. 
+
+Start the tutorial here: https://try.vidchain.net/demo/tutorial 
+
+<!-- 
 Once installed, the first time you open the app you’ll be asked to define a PIN code or to authenticate using your biometrics (used to encrypt the keys). As soon as you open the wallet, your keys will be created.
+--> 
 
 The application has four views:
 
