@@ -24,9 +24,11 @@ VIDwallet is designed to act ledger-agnostic meaning that it does not rely on a 
 The application has five views:
 
 - **Credentials**: list of all the credentials you own and store in your wallet.
-- **Login**: where you can scan a QR code presented by a web page the user asks to authenticate in.
+- **Identies**
+- **Scan QR-Code**: where you can scan a QR code presented by a web page the user asks to authenticate in.
 - **Notifications**: list of all the notifications you receive from a credentials provider, like .
 - **Settings**
+
 
 ![main-screen](../_media/start-screen.png)
 
