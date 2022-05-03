@@ -24,8 +24,8 @@ VIDwallet is designed to act ledger-agnostic meaning that it does not rely on a 
 VIDwallet provides five screens to the user, detailed as follows: 
 
 1. **Credentials Screen**. The start screen is the credentials screen, which lists all stored credentials related to the holder. Also, new credentials can be added in this screen. 
-2. **Identies Screen**. In the identity screen, the user can check and select their available identifiers. 
-3. **Scan QR-Code Screen**. The scan QR-code screen is used to scan QR-codes that are used to establish a connection, request credentials, and 
+2. **Identies Screen**. In the identity screen, the users can list and select their available identifiers. 
+3. **Scan QR-Code Screen**. The scan QR-code screen is used to scan QR-codes that are used to establish a connection and for requesting credentials for data exchange or authentication. 
 4. **Notifications**. The messages and notification center screen displays notifications and messages to the user. 
 5. **Settings**. The Setting screen displays the available settings to the user like for example the used environment or the display language. 
 
