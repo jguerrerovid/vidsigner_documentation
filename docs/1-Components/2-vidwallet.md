@@ -21,19 +21,25 @@ VIDwallet is designed to act ledger-agnostic meaning that it does not rely on a 
 
 ## VIDwallet Screens 
 
-The application has five views:
+VIDwallet provides five screens to the user, detailed as follows: 
 
-- **Credentials**: list of all the credentials you own and store in your wallet.
-- **Identies**
-- **Scan QR-Code**: where you can scan a QR code presented by a web page the user asks to authenticate in.
+- **Credentials Screen**: list of all the credentials you own and store in your wallet.
+- **Identies Screen**
+- **Scan QR-Code Screen**: where you can scan a QR code presented by a web page the user asks to authenticate in.
 - **Notifications**: list of all the notifications you receive from a credentials provider, like .
 - **Settings**
 
 
+|![main-screen](../_media/start-screen.png)|![main-screen](../_media/did-screen.png)|
+|---------|---------|
+| ![main-screen](../_media/scanqr-screen.png)  | ![main-screen](../_media/messagecenter-screen.png) |
+| ![main-screen](../_media/settings-screen.png) |   |
+
+<!-- 
 ![main-screen](../_media/start-screen.png)
 
-
 ![main-screen](../_media/did-screen.png)
+
 
 ![main-screen](../_media/scanqr-screen.png)
 
@@ -41,7 +47,7 @@ The application has five views:
 
 ![main-screen](../_media/settings-screen.png)
 
-
+-->
 
 
 <!--
@@ -64,7 +70,7 @@ VIDwallet is available for Android and Apple smartphones:
 
 Validated ID offers a tutorial for the users to get familiar with VIDwallet. The user journey of this tutorial focuses on a student that has a large family and wants to first, get a big family credential using the identity credential at the government page. And second, use this big family credential to get a discount on the studying fees. The tutorial describes all steps starting with the installation of the mobile app up to requesting the discount at the university. 
 
-[Start Tutorial](https://try.vidchain.net/demo/tutorial)
+**[Start Tutorial](https://try.vidchain.net/demo/tutorial)**
 
 
 
