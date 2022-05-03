@@ -23,17 +23,17 @@ VIDwallet is designed to act ledger-agnostic meaning that it does not rely on a 
 
 VIDwallet provides five screens to the user, detailed as follows: 
 
-- **Credentials Screen**: list of all the credentials you own and store in your wallet.
-- **Identies Screen**
-- **Scan QR-Code Screen**: where you can scan a QR code presented by a web page the user asks to authenticate in.
-- **Notifications**: list of all the notifications you receive from a credentials provider, like .
-- **Settings**
+1. **Credentials Screen**. The start screen is the credentials screen, which lists all stored credentials related to the holder. Also, new credentials can be added in this screen. 
+2. **Identies Screen**. In the identity screen, the user can check and select their available identifiers. 
+3. **Scan QR-Code Screen**. The scan QR-code screen is used to scan QR-codes that are used to establish a connection, request credentials, and 
+4. **Notifications**. The messages and notification center screen displays notifications and messages to the user. 
+5. **Settings**. The Setting screen displays the available settings to the user like for example the used environment or the display language. 
 
 
-|![main-screen](../_media/start-screen.png)|![main-screen](../_media/did-screen.png)|
-|---------|---------|
-| ![main-screen](../_media/scanqr-screen.png)  | ![main-screen](../_media/messagecenter-screen.png) |
-| ![main-screen](../_media/settings-screen.png) |   |
+|    ![main-screen](../_media/start-screen.png)*Screen 1*     |        ![main-screen](../_media/did-screen.png)*Screen 2*        |
+|:-----------------------------------------------------------:|:----------------------------------------------------------------:|
+|  ![main-screen](../_media/scanqr-screen.png)***Screen 3***  | ![main-screen](../_media/messagecenter-screen.png)***Screen 4*** |
+| ![main-screen](../_media/settings-screen.png)***Screen 5*** |                                                                  |
 
 <!-- 
 ![main-screen](../_media/start-screen.png)
