@@ -26,20 +26,20 @@ Regarding the capacity of recognition by the counterparts who want to verify the
 
 ## Processes 
 
+The eIDAS Bridge supports three main processes focusing on assosiating a DID to a certificate, sealing a VC with this certificate, and finally the verification of a sealed VC. The process flows are illustrated below. 
 
-
-### Step 1: certificate storage for did association
+### Step 1: Certificate Storage for DID Association
 
 ![step1-eidas](../_media/step1-eidas.jpg)
 
 The issuer sends the certificate and associates it to the DID that will be used as Verifiable Credential (VC) issuer. The API stores the certificate in Confidential Storage.
 
-### Step 2: signature with a QEC
+### Step 2: Signature with a QEC
 
 ![step2-eidas](../_media/step2-eidas.jpg)
 The issuer requests to sign a VC using his/her previously stored certificate and the API provides a VC containing a CAdES signature.
 
-### Step 3: QEC signature validation
+### Step 3: QEC Signature Validation
 
 ![step3-eidas](../_media/step3-eidas.jpg)
 
