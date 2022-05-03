@@ -24,23 +24,27 @@ In fact, in this sense, a Certification Authority could participate in the Trust
 
 Regarding the capacity of recognition by the counterparts who want to verify the presentation of a credential, the stamping component itself is verifiable through the eIDAS Bridge, facilitating the recognition of the source entity that has signed the credential, in the same sense given to the act of sealing in PKI. But allowing later to take advantage of the programmatic nature of verifiable credentials for process automation.
 
-## Step 1: certificate storage for did association
+## Processes 
 
-![step1-eidas](../_media/step1-eidas.png)
+
+
+### Step 1: certificate storage for did association
+
+![step1-eidas](../_media/step1-eidas.jpg)
 
 The issuer sends the certificate and associates it to the DID that will be used as Verifiable Credential (VC) issuer. The API stores the certificate in Confidential Storage.
 
-##  Step 2: signature with a QEC
+### Step 2: signature with a QEC
 
-![step2-eidas](../_media/step2-eidas.png)
+![step2-eidas](../_media/step2-eidas.jpg)
 The issuer requests to sign a VC using his/her previously stored certificate and the API provides a VC containing a CAdES signature.
 
-##  Step 3: QEC signature validation
+### Step 3: QEC signature validation
 
-![step3-eidas](../_media/step3-eidas.png)
+![step3-eidas](../_media/step3-eidas.jpg)
 
 The verifier sends a VC with CAdES signature to be validated and the API provides the validation result.
 
-These three steps above are the main functionalities developed for eIDAS Bridge project and the interoperability of VC signed with our implementation and other providers was proven successfully. For that reason, we have taken this code and included in our VIDchain API to provide our users the ability of using their certificates to issue VCs and validating VPs containing QEC signatures.
+
 
 
