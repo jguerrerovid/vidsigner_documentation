@@ -129,7 +129,7 @@
         "description": "The client has received the code via callback URL and it is ready to request the JWT that contains the information presented by the user, either the did or a verifiable presentation.",
         "requestBody": {
           "content": {
-            "application/x-www-form-urlencoded": {
+            "application/json": {
               "schema": { "$ref": "#/components/schemas/oauth2token" },
               "example": {
                 "code": "q3JsH7j9fZDJ5lmOJuJO13fucaNbVy-o2VzsjSKKOm8.C_fAtYywbmjGx1lEpsP1sPL-1__GNtsPH7iMASg5Z5A",

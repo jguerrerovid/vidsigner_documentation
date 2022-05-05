@@ -93,7 +93,7 @@ paths:
       description: The client has received the code via callback URL and it is ready to request the JWT that contains the information presented by the user, either the did or a verifiable presentation.
       requestBody:
         content:
-          application/x-www-form-urlencoded:
+          application/json:
             schema:
               $ref: "#/components/schemas/oauth2token"
             example:
