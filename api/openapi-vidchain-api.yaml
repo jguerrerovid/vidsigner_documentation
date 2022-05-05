@@ -1,8 +1,8 @@
 openapi: 3.0.3
 info:
   title: VIDchain API
-  description: Validated ID - VIDchain Public API
-  version: 0.0.1
+  description: VIDchain API supplies all the endpoints for VIDcredentials product.
+  version: 1.2.5
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
