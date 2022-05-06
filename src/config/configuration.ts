@@ -67,8 +67,9 @@ const config: ApiConfig = {
     // Show only APIs that are ready
     if (ENVIRONMENT === "staging") {
       return [
-        "vidchain-api",
+        "vidcredentials-api",
         "vidconnect-api",
+        "eidas-bridge-api",
         ...(ENVIRONMENT === "staging" ? ["staging"] : []),
       ].includes(api.file);
     }

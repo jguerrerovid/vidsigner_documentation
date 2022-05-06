@@ -1,10 +1,14 @@
 [
   {
-    "name": "VIDchain API",
-    "file": "vidchain-api"
+    "name": "VIDcredentials API",
+    "file": "vidcredentials-api"
   },
   {
     "name": "VIDconnect API",
     "file": "vidconnect-api"
+  },
+  {
+    "name": "eIDAS Bridge API",
+    "file": "eidas-bridge-api"
   }
 ]

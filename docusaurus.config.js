@@ -20,8 +20,8 @@ const config = {
       "docusaurus-preset-openapi",
       {
         api: {
-          path: "./api-json/openapi-vidchain-api.json",
-          routeBasePath: "vidchain-openapi",
+          path: "./api-json/openapi-vidcredentials-api.json",
+          routeBasePath: "vidcredentials-openapi",
         },
         docs: {
           sidebarCollapsed: false,
@@ -42,6 +42,15 @@ const config = {
         id: "vidconnect",
         path: "./api-json/openapi-vidconnect-api.json",
         routeBasePath: "vidconnect-openapi",
+        // ... other options
+      },
+    ],
+    [
+      "docusaurus-plugin-openapi",
+      {
+        id: "eidas",
+        path: "./api-json/openapi-eidas-bridge-api.json",
+        routeBasePath: "eidas-bridge-openapi",
         // ... other options
       },
     ],
@@ -68,8 +77,9 @@ const config = {
             label: "OpenAPIs",
             position: "left",
             items: [
-              { to: "/vidchain-openapi", label: "VIDchain" },
+              { to: "/vidcredentials-openapi", label: "VIDcredentials" },
               { to: "/vidconnect-openapi", label: "VIDconnect" },
+              { to: "/eidas-bridge-openapi", label: "eIDAS Bridge" },
             ],
           },
         ],
