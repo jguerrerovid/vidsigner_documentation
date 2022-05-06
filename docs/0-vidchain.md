@@ -3,22 +3,22 @@ id: intro
 title: VIDchain
 ---
 
-# VIDchain
+# Introduction
 
 VIDchain is a product of [Validated ID](https://www.validatedid.com/), a Spanish Qualified Trust Service Provider, providing Self-Sovereign Identity (SSI) and related services. SSI is a rather new concept for managing digital identities with the main goal to return the control over identity data back to the users. If you are interested in further explore SSI and its potential please check out our [SSI Whitepaper](https://www.validatedid.com/vidchain).
 
 ## Documentation Overview
 
-This documentation presents several layer of information starting with general information for the general public and everybody that is interested in VIDchain up to integration guides together with a detailed API description for architects and developers to be able to integrate VIDchain services into their systems.
+This documentation presents several layer of information starting with general information for the general public and everybody that is interested in VIDchain up to integration guides together with a detailed API description for architects and developers to be able to integrate VIDchain services into their systems. The documentation is structure in the following four sections:
 
-1. This page presents an overview of VIDchain including its components.
-2. The important components are detailed in the specific components section.
-3. Third, integration guides detail the necessary steps for the integration of our services into target systems.
-4. This integration is supported by the detailed VIDchain API specification.
+1. [VIDchain](0-vidchain.md): This page presents an overview of VIDchain including its components.
+2. [Components](1-Components/0-vidcredential.md): The important components are detailed in the specific components section.
+3. [Integration Guides](2-Integration%20Guides/0-setup-oidc.md): The integration guides detail the necessary steps for the integration of our services into target systems.
+4. [API Specifications](https://docs.vidchain.net/vidchain-openapi): The integration guides are supported by detailed API specification.
 
 ## Main Features
 
-To highlight the advantages of using VIDchain as SSI services provider, we list following the main features of our services.
+To highlight the advantages of using VIDchain as SSI services provider, we list following the main features of our services:
 
 - By using our services including the identity wallet, users are in **full control over their own identity data**.
 - Our provides services are **fully GDPR-compliant**. By utilizing our services, customers will not have to worry about GDPR compliance.
@@ -35,7 +35,7 @@ VIDchain is composed of different building blocks depicted in the architecture f
 
 - [VIDcredentials](1-Components/0-vidcredential.md), this component's main purpose is to handle credentials and credential related data. Handling credentials includes creating, signing and verifying verifiable credentials, but also managing schemas and the revocation management.
 - [VIDconnect](1-Components/1-vidconnect.md), an OpenID Connect provider that is able to perform a DID authentication process. The OpenID Connect SIOP library, a Typescript library, that you can use from your app to exchange credentials with the VIDwallet.
-- [VIDwallet](1-Components/2-vidwallet.md), a mobile application used by end-users with the main purpose to manage and store their key matrial and personal information such as identifiers and credentials. 
+- [VIDwallet](1-Components/2-vidwallet.md), a mobile application used by end-users with the main purpose to manage and store their key matrial and personal information such as identifiers and credentials.
 - [eIDAS Bridge](1-Components/3-eidas-bridge.md), the eIDAS Bridge is a project that aims to bridge legal entities based on X509 certificates with W3C based verfiable credentials.
 
 ![vidchain-components](_media/architecture.png)
@@ -80,4 +80,3 @@ The guide is divided in two parts: the **configuration** part and the **tutorial
 - [VIDchain OpenAPI Specification](https://docs.vidchain.net/vidchain-openapi)
 - [VIDconnect OpenAPI Specification](https://docs.vidchain.net/vidconnect-openapi)
 - [VIDchain Demo Site](https://try.vidchain.net/demo)
-<!-- - [VIDwallet APK for Android](https://drive.google.com/file/d/1En7_nhd0ANb3ZZe3DVaMPnmqlRfK8zYC/view?usp=sharing) -->
