@@ -21,13 +21,20 @@ This documentation presents several layer of information starting with general i
 To highlight the advantages of using VIDchain as SSI services provider, we list following the main features of our services:
 
 - By using our services including the identity wallet, users are in **full control over their own identity data**.
-- Our provides services are **fully GDPR-compliant**. By utilizing our services, customers will not have to worry about GDPR compliance.
-- SSI vendors often depend on a distributed ledger (DL) or blockchain network. VIDchain offers flexibility by **being fully ledger agnostic**. In fact, VIDchain services can operate even without DL or blockchain but nevertheless, VIDchain is integrated with several DLTs.
+- Our services are **fully GDPR-compliant**. By utilizing our services, customers will not have to worry about GDPR compliance.
+- SSI vendors often depend on a distributed ledger (DL) or blockchain network. VIDchain offers flexibility by **being fully ledger agnostic**. In fact, VIDchain services can operate even without DL or blockchain but nevertheless, VIDchain is integrated with several DLTs such as EBSI, Alastria, Dalion, Ethereum,...
 - VIDchain offers a **passwordless authentication flow**, which increases not only the user-experience but also the security since users tend to resuse username-password combinations or use-easy-to-guess passwords.
 - VIDchain services can be **integrated and used on different platforms** such as in the web or on a webapp or mobile app.
 - VIDchain offers a service to **manage and handle credentials including, creating, signing, issuing, storing, revoking, exchanging and presenting verifiable credentials**.
-- VIDchain **binds legal entities to verifiable credentials**. Legal entities such as natural and legal persons are often represented by X509 certificates. This binding is achieved by our so-called eIDAS bridge. By sealing the verifiable credential with a qualified certificate, also **legal value is added to the verifiable credential** and can be verified afterwards.
-- Users might own a personal certificate containing the users' attributes. VIDchain offers a service to **transform a X509 certificate into a valid verifiable credential**.
+- VIDchain **binds legal entities to verifiable credentials**. Legal entities such as natural and legal persons are often represented by X509 certificates. This binding is achieved by our so-called [eIDAS bridge](1-Components/3-eidas-bridge.md). By sealing the verifiable credential with a qualified certificate, also **legal value is added to the verifiable credential** and can be verified afterwards.
+- Users might own a personal certificate containing the users' attributes. VIDchain offers a service, called [certbridge](https://certbridge.vidchain.net/), to **transform a X509 certificate into a valid verifiable credential**.
+- Users can **create credentials based on different sources** such as from:
+  - national IDs like passports, national ID cards, or certificates
+  - financial institutions using the PSD2 broker
+  - social networks
+  - email account
+  - phone number
+- The field of SSI is relatively new and standards for data formats and protocols are emerging. **VIDchain aims to be aligned with the SSI related standards** uch as OpenID Connect, VC W3C, DID W3C, DIF confidential storage, ...
 
 ## Components Overview
 
