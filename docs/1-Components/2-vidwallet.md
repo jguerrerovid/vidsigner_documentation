@@ -46,11 +46,17 @@ This flow focuses on creating a phone number or email credential. When the user 
 | ![Start Screen](../_media/create-credential-screen.png) | ![Select DID Screen](../_media/phone-number-screen.png) | ![Start Screen](../_media/email-screen.png) |
 | :-----------------------------------------------------: | :-----------------------------------------------------: | :-----------------------------------------: |
 
+### Create ID Document-Based Credential
+
 | ![Start Screen](../_media/external-resources-screen.png) | ![Select DID Screen](../_media/verify-id-screen.png) | ![Start Screen](../_media/scan-passport-screen.png) |
 | :------------------------------------------------------: | :--------------------------------------------------: | :-------------------------------------------------: |
 
+### Create Social Network-Based Credential
+
 | ![Start Screen](../_media/external-resources-screen.png) | ![Select DID Screen](../_media/social-networks-screen.png) | ![Start Screen](../_media/connect-fb-screen.png) |
 | :------------------------------------------------------: | :--------------------------------------------------------: | :----------------------------------------------: |
+
+### Create Credential From A Bank Account
 
 | ![Start Screen](../_media/external-resources-screen.png) | ![Select DID Screen](../_media/connect-bank-screen.png) | ![Start Screen](../_media/select-bank-screen.png) |
 | :------------------------------------------------------: | :-----------------------------------------------------: | :-----------------------------------------------: |
