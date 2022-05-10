@@ -35,50 +35,23 @@ To highlight the advantages of using VIDchain as SSI services provider, we list 
   - email account
   - phone number
 - The field of SSI is relatively new and standards for data formats and protocols are emerging. **VIDchain aims to be aligned with the SSI related standards** uch as OpenID Connect, VC W3C, DID W3C, DIF confidential storage, ...
+- VIDchain allows users to quickly learn how SSI and VIDchain works by **providing an interactive and guided [Tutorial](https://try.vidchain.net/demo).**
 
 ## Components Overview
 
 VIDchain is composed of different building blocks depicted in the architecture figure and listed below:
 
-- [VIDcredentials](1-Components/0-vidcredential.md), this component's main purpose is to handle credentials and credential related data. Handling credentials includes creating, signing and verifying verifiable credentials, but also managing schemas and the revocation management.
+- [VIDcredentials](1-Components/0-vidcredential.md), this component's main purpose is to handle the credential lifecycle as well as credential related data. Handling credentials includes creating, signing and verifying verifiable credentials, but also managing schemas and the revocation management.
 - [VIDconnect](1-Components/1-vidconnect.md), an OpenID Connect provider that is able to perform a DID authentication process. The OpenID Connect SIOP library, a Typescript library, that you can use from your app to exchange credentials with the VIDwallet.
 - [VIDwallet](1-Components/2-vidwallet.md), a mobile application used by end-users with the main purpose to manage and store their key matrial and personal information such as identifiers and credentials.
 - [eIDAS Bridge](1-Components/3-eidas-bridge.md), the eIDAS Bridge is a project that aims to bridge legal entities based on X509 certificates with W3C based verfiable credentials.
 
 ![vidchain-components](_media/architecture.png)
 
-<!--
-# This guide
+<p align="center">
+This figure depicts VIDchain's overall architecture on a very high-level. Also, it illustrates the main componets, actors and communication flows. Each component consists of several subcomponents that implements different functionality focusing on different kind of data.
 
-This document provides information on how to use the VIDchain API to:
-
-- Authenticate your users (using standard OpenID Connect!)
-  - on your web or webapp
-  - on your mobile app
-- Issue credentials
-- Request credentials
-  We'll also show you what do you need to do to register as a client to use VIDchain OpenID provider.
-
-The guide is divided in two parts: the **configuration** part and the **tutorial**. The former provides an overview of the items needed in order to be ready to start the tutorial. Therefore, please read the requirements first so as to get ready for the integration.
-
-- Step 1: [Setting things up & other requirements](/docs/VIDchain/requirements)
-
-  - [Setting up your OIDC client](/docs/VIDchain/requirements#set-up-your-oidc-client)
-  - [Create your entity DID](/docs/VIDchain/requirements#create-your-entity-did)
-  - [Accessing the API: API Bearer Token Authentication](/docs/VIDchain/requirements#client-id-and-entity-session-key-registration-prod-api-only)
-  - [Define the contents of the Verifiable Credentials](/docs/VIDchain/requirements#define-the-contents-of-the-verifiable-credentials)
-
-- Step 2: Web or mobile? Once you have set things up, you can interact with the wallet from your backend or directly from your mobile app:
-  - Integrate your [web or webapp with VIDchain](/docs/VIDchain/tutorial)
-    - [OIDC flow for DID Auth](/docs/VIDchain/tutorial#oidc-flow-for-did-auth)
-    - [Issue Credentials](/docs/VIDchain/tutorial#issue-credentials)
-    - [Request and Verify credentials](/docs/VIDchain/tutorial#request-and-verify-credentials)
-    - [Present and Verify credentials](/docs/VIDchain/tutorial#present-and-verify-credentials)
-  - Integrate your [mobile app using DID SIOP](../4-sioplib.md)
-
--->
-
-<!-- move links to proper places -->
+</p>
 
 ## Links and References
 
