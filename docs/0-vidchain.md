@@ -48,10 +48,9 @@ VIDchain is composed of different building blocks depicted in the architecture f
 
 ![vidchain-components](_media/architecture.png)
 
-<p align="center">
-This figure depicts VIDchain's overall architecture on a very high-level. Also, it illustrates the main componets, actors and communication flows. Each component consists of several subcomponents that implements different functionality focusing on different kind of data.
-
-</p>
+<figcaption align="center">
+This figure depicts VIDchain's overall architecture on a very high-level. Also, it illustrates the main components, actors and communication flows. Each component consists of several subcomponents that implements different functionality focusing on different kind of data.
+</figcaption>
 
 ## Links and References
 
