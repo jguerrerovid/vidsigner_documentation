@@ -10,7 +10,6 @@ VIDcredentials is a component of VIDchain that is responsible for managing crede
 - VIDcredentials provides functionality for credentials to **cover the entire credential lifecycle including issuance and revocation**.
 - Another service of VIDcredentials enables the **creation of custom credential templates**.
 - Additionally, **VIDcredentials allows the creation of custom credential types**.
-- **Shemas can be managed** and are stored on VIDcredentials.
 
 ## Endpoints
 
