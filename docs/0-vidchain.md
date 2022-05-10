@@ -56,6 +56,7 @@ This figure depicts VIDchain's overall architecture on a very high-level. Also, 
 
 - [Validated ID Website](https://www.validatedid.com)
 - [VIDchain Website](https://www.validatedid.com/vidchain)
-- [VIDchain OpenAPI Specification](https://docs.vidchain.net/vidchain-openapi)
+- [VIDcredentials OpenAPI Specification](https://docs.vidchain.net/vidcredentials-openapi)
 - [VIDconnect OpenAPI Specification](https://docs.vidchain.net/vidconnect-openapi)
+- [eIDAS Bridge OpenAPI Specification](https://docs.vidchain.net/eidas-bridge-openapi)
 - [VIDchain Demo Site](https://try.vidchain.net/demo)
