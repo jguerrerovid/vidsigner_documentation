@@ -30,8 +30,18 @@ VIDwallet provides five screens to the user, detailed as follows:
 
 ## Create Credential Workflows
 
+Following, we present the main flows related to create a new credential including screenshots and a detailed description.
+
+### Start Create Credential Flow
+
+In this flow, the user starts on the start screen and selects "New Credential". Next, a screen is displayed which displays the identifier selection to the user. In the displayed case, three identifier are available because three were registered for the user. The number of identifier could also be higher or lower. After selecting one identifier the third screen is displayed with all possible ways to create a credential. The selected identifier will be used in the credential creation process as subject id.
+
 | ![Start Screen](../_media/start-screen.png) | ![Select DID Screen](../_media/select-did.png) | ![Start Screen](../_media/create-credential-screen.png) |
 | :-----------------------------------------: | :--------------------------------------------: | :-----------------------------------------------------: |
+
+### Create Phone Number or Email Credential
+
+This flow focuses on creating a phone number or email credential. When the user selects "connect to your phone number", the second screen will be displayed. Next, the user enters the phone number and will receive a TAN code which needs to be entered afterwards. In case of the email credential, the third screen is displayed. After entering the email address by the user, a code is sent to the email address which has to be entered afterwards. In both cases, after entering the correct verification code a credential is added to the list of credentials.
 
 | ![Start Screen](../_media/create-credential-screen.png) | ![Select DID Screen](../_media/phone-number-screen.png) | ![Start Screen](../_media/email-screen.png) |
 | :-----------------------------------------------------: | :-----------------------------------------------------: | :-----------------------------------------: |
