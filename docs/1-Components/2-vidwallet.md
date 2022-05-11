@@ -48,15 +48,21 @@ This flow focuses on creating a phone number or email credential. When the user 
 
 ### Create ID Document-Based Credential
 
+In this process flow, the user can create an ID credential that is based on a legal document in a so-called Know-Your-Customer (KYC) process. The advantage of such ID credential is that it has legal value and the correctness of the attributes is ensured. First, the user selects connect with external resources and arrives at the first screen here called "External Resources". On this screen, the user selects "Verify your ID" and the next screen is shown. There, the user can select if either the passport or an ID card is used for the identity proofing in the KYC process. In the example, the user selected passport, which starts the KYC process with the first step of scanning the passport. After this, other instructions will follow. After successfully performing the KYC process, the user receives an identity credential that is stored in the wallet and can afterwards be used for identification and authentication processes.
+
 | ![Start Screen](../_media/external-resources-screen.png) | ![Select DID Screen](../_media/verify-id-screen.png) | ![Start Screen](../_media/scan-passport-screen.png) |
 | :------------------------------------------------------: | :--------------------------------------------------: | :-------------------------------------------------: |
 
 ### Create Social Network-Based Credential
 
+Another option on the external sources screen is to create a credential using social networks, which the user selects. The next screen shows two social networks that can be used to create a social network based credential. In this example, the user has selected facebook and is forwarded to the facebook log in page where the user can also select which data are going to be shared and later be in the credential.
+
 | ![Start Screen](../_media/external-resources-screen.png) | ![Select DID Screen](../_media/social-networks-screen.png) | ![Start Screen](../_media/connect-fb-screen.png) |
 | :------------------------------------------------------: | :--------------------------------------------------------: | :----------------------------------------------: |
 
 ### Create Credential From A Bank Account
+
+Last but not least, the option to create a credential from your bank account. In this case, the user selects "Connect to your bank". Next, a screen is shown which informs the user that VIDwallet uses a service called Plaid to retrieve data from the banks as well as what data are going to be accessed. After pressing continue, a screen is shown where the user selects the bank where the bank account is located. Next, the user has to log in at the banks and confirms the data transfer. At the end of the process, a credential is issued to the user's wallet based on the data provided by the bank.
 
 | ![Start Screen](../_media/external-resources-screen.png) | ![Select DID Screen](../_media/connect-bank-screen.png) | ![Start Screen](../_media/select-bank-screen.png) |
 | :------------------------------------------------------: | :-----------------------------------------------------: | :-----------------------------------------------: |

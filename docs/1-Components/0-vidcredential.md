@@ -14,7 +14,7 @@ VIDcredentials is a component of VIDchain that is responsible for managing crede
 
 ## Endpoints
 
-VIDcredentials offers services in a form of an API. These services are mainly credential related services such as creating, presenting or revoking credentials beside other services. Please find a brief description below and a detailed description in the [OpenAPI specification](https://docs.vidchain.net/vidcredentials-openapi).
+VIDcredentials offers services in a form of an API. These services are mainly credential related services such as creating, presenting or revoking credentials beside other services. Please find a brief description below and a detailed description in the [VIDcredential OpenAPI specification](https://docs.vidchain.net/vidcredentials-openapi).
 
 - **Authentication Service:** This services allows API users to authenticate and retrieve and OAuth bearer token in order to use the API endpoints.
 - **Entities Service:** This service endpoint allows the API user to modify attributes related to an entity.
