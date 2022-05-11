@@ -13,7 +13,7 @@ This documentation presents several layer of information starting with general i
 
 1. [VIDchain](0-vidchain.md): This page presents an overview of VIDchain including its components.
 2. [Components](1-Components/0-vidcredential.md): The important components are detailed in the specific components section.
-3. [Integration Guides](2-Integration%20Guides/0-setup-oidc.md): The integration guides detail the necessary steps for the integration of our services into target systems.
+3. [Integration Guides](2-Integration%20Guides/1-setup-oidc.md): The integration guides detail the necessary steps for the integration of our services into target systems.
 4. [API Specifications](https://docs.vidchain.net/vidchain-openapi): The integration guides are supported by detailed API specification.
 
 ## Main Features

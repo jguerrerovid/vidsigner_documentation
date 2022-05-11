@@ -11,9 +11,9 @@ VIDconnect supports different workflows such as Webapp to App, and the App to Ap
 
 Our documentation provides integration guides in order for developers to integrate our components into their systems.
 
-- [Setting up the OpenID Connect Client](../2-Integration%20Guides/0-setup-oidc.md)
-- [Webapp Integration](../2-Integration%20Guides/1-integration-webapps.md)
-- [App to App Integration](../2-Integration%20Guides/2-integration-app2app.md)
+- [Setting up the OpenID Connect Client](../2-Integration%20Guides/1-setup-oidc.md)
+- [Webapp Integration](../2-Integration%20Guides/2-integration-webapps.md)
+- [App to App Integration](../2-Integration%20Guides/3-integration-app2app.md)
 
 ## Endpoints
 

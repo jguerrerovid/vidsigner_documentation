@@ -3,8 +3,6 @@ id: integration-app2app
 title: Integration in the App to App Case
 ---
 
-
-
 # Requesting credentials in the wallet from your app (app2app)
 
 You can use the component `did-siop` to request credentials from the VIDwallet. You can [get it from npm](https://www.npmjs.com/package/@validatedid/did-auth).
