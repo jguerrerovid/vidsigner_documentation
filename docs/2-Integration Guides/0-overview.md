@@ -16,9 +16,9 @@ More information on the components are available on the specific components page
 
 A detailed API description is available under:
 
-- [VIDCredentials](https://docs.vidchain.net/vidcredentials-openapi)
-- [VIDconnect](https://docs.vidchain.net/vidconnect-openapi)
-- [eIDAS Bridge](https://docs.vidchain.net/eidas-bridge-openapi)
+- [OpenAPI VIDCredentials](https://docs.vidchain.net/vidcredentials-openapi)
+- [OpenAPI VIDconnect](https://docs.vidchain.net/vidconnect-openapi)
+- [OpenAPI eIDAS Bridge](https://docs.vidchain.net/eidas-bridge-openapi)
 
 The integration guides provide the necessary information to integrate the VIDchain component into a target system. The provided information guide integrators step-by-step through the integration process.
 
@@ -35,3 +35,7 @@ The integration guides are structured in three main parts:
 3. The eIDAS bridge integration is covered in the [Integration of the eIDAS Bridge](4-integration-eidasbridge.md) page.
 
 ## Preliminary Steps
+
+### Generating Identifier
+
+### API Access Token
