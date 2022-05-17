@@ -11,7 +11,7 @@ In order to be able to setup the OpenID client, and identifier, a so-called dece
 
 ### Register the Entity at VIDchain
 
-- **Creating an Entity at VIDchain:** An entity represents a party that will be registered at VIDchain. The entity creation process is performed by the VIDchain team for the customers and users of VIDchain. Please contact [support@vidchain.net](mailto:support@vidchain.net) VIDchain support for your entity creation.
+- **Creating an Entity at VIDchain:** An entity represents a party that will be registered at VIDchain. The entity creation process is performed by the VIDchain team for the customers and users of VIDchain. Please contact the VIDchain support team [support@vidchain.net](mailto:support@vidchain.net) for your entity creation.
 - **OpenID Connect Client ID:** The client ID is a domain unique identifier for a specific client. This client ID has to be registered at VIDchain so that OpenID connect protocol can be performed.
 - **Retrieving the API Key** After the entity was created at VIDchain - by the VIDchain team - the API key is sent to the VIDchain client. This API key is required to be able to interact with the APIs provided by VIDchain.
 - **Creating a DID:** The communication with VIDchain requires the information what DID method is used. [Read more about DIDs and DID methods here.](https://www.w3.org/TR/did-core/)
@@ -75,19 +75,17 @@ An example response is shown below:
 }
 ```
 
-The `accessToken` is the Bearer token you need to include in further calls to protected VIDchain API endpoints. The reponse futher details the `tokenType` as well as the validity time.
+The `accessToken` is the bearer token that needs to be included in calls to protected API endpoints.
 
 ## Set Up the OIDC Client
 
-We support OIDC Authorization Code Flow with or without PKCE. We’ll need the following information to register your OIDC client:
+VIDchain supports the _OIDC Authorization Code Flow with or without PKCE_. The following information are required to register the client at VIDchain. Please provide these data by contacting the VIDchain support team [support@vidchain.net](mailto:support@vidchain.net).
 
-- `client_id` : a string to identify your client when making calls to the OIDC provider
-- `client_secret`: to authenticate your client’s calls to OIDC Provider.
-- `redirect_uri`: the URL where the OIDC Provider should send the user after the authentication flow is done.
-- (optional) `name`
-- (optional) `logo` : An image that will appear when user is logging in
-
-?> Provide this information to our team and we will assist you creating your OIDC client.
+- `client_id` : The client id is a string to uniquely identify your client when making calls to the OIDC provider.
+- `client_secret`: The client secret is used to authenticate the client to OIDC Provider.
+- `redirect_uri`: This URL defines the location where the OIDC Provider should redirect the user after the authentication flow is finished.
+- (optional) `name`: This optional attribute defines the name of the entity displayed when logging in.
+- (optional) `logo` : This optional attribute defines the image that will appear when user is logging in.
 
 An example of OpenID client creation using Typescript and the [JSO client](https://www.npmjs.com/package/jso):
 
@@ -116,22 +114,25 @@ this.client = new JSO(configFile);
 
 ## Postliminary (Optional) - Modify your Entity
 
-Passing the `accessToken` requested as a Bearer token in an API PUT call you can modify the attributes of your entity:
+After the setup of the OpenID connect client is successfully finished, it is still possible to change some of the entity's attributes. Basically, it is possible to change the callback URL as well as the entity image. An example call is shown below and the request is authenticated using the bearer token.
 
-- HTTP call:
+- **HTTP call**:
   ```
   PUT to https://api.vidchain.net/api/v1/legal-entities/attributes
   ```
-- Authorization: Bearer token
-- Body :
+- **Authorization: Bearer token**
+- **Body** :
   ```javascript
   {
     "callbackUrl: "https://<entity backend url>/<callback path>",
     "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAABfmlDQ1......" //optional
   }
   ```
-  - **callbackUrl** (optional): is the URL where the VIDchain API should be able to redirect when finalising an async process like a Presentation Request. Notice this is not the OIDC callback but the entity backend endpoint where the VIDChain API will send back the endpoint where to retrieve the VP.
-  - **icon** (optional): is the Base64 encoded image.
+
+Both possible fields of the body are optional, namely:
+
+- `callbackUrl`: (optional) This callback URL describes the redirect location for VIDchain when finalising an async process like a presentation request. Note that this is not the OIDC callback but the entity backend endpoint where the VIDChain APIs will send back the endpoint where to retrieve the verifiable presentation.
+- `icon`: (optional) This field expects the base64 encoded image that should be displayed when logging in.
 
 <!--
 
