@@ -1,6 +1,6 @@
 ---
 id: guides-overview
-title: Integration Guides Overview
+title: Overview
 ---
 
 # Introduction
@@ -26,16 +26,10 @@ The integration guides provide the necessary information to integrate the VIDcha
 
 The integration guides are structured in three main parts:
 
-1. Some preliminary steps that need to be completed before the integration can be started as well as the setup of the OpenID client which is an essential part and needed for the integration.
-   - The preliminary steps are described in section [Preliminary Steps](#preliminary-steps).
+1. We start with the description of the setup of the OpenID connect client together with preliminary steps are detailed. In detail, the description is split into two parts:
+   - The preliminary steps are described in section [Preliminary Steps](1-setup-oidc.md/#preliminary-steps).
    - The setup of the OpenID connect client is described on the [Setup OpenID Client](1-setup-oidc.md) page.
 2. VIDchain supports two scenarios to exchange credentials such as first the mobile app to web app and second the mobile app to mobile app.
    - The integration for web apps is covered in the [Integration for Webapps](2-integration-webapps.md) integration guide.
    - The mobile app to mobile app scenario is covered in the [Integraion in the App to App Case](3-integration-app2app.md) integration guide.
 3. The eIDAS bridge integration is covered in the [Integration of the eIDAS Bridge](4-integration-eidasbridge.md) page.
-
-## Preliminary Steps
-
-### Generating Identifier
-
-### API Access Token
