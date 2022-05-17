@@ -3,7 +3,7 @@ id: setup-oidc
 title: Setup OpenID Connect Client
 ---
 
-This documentation details the steps to setup an OpenID connect client that is used in an authentication flow. Importantly, the preliminary steps are described beforehand. These preliminary steps are required to be completed to be able to finish the OpenID connect client setup.
+This documentation details the steps to setup an OpenID connect client that is used in an authentication flow. Importantly, the preliminary steps are described beforehand. These preliminary steps are required to be completed to be able to finish the OpenID connect client setup. Finally, this documentation also details some postliminary steps such as changing entity attributes.
 
 ## Preliminary Steps
 
