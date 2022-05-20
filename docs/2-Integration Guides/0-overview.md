@@ -30,6 +30,6 @@ The integration guides are structured in three main parts:
    - The preliminary steps are described in section [Preliminary Steps](1-setup-oidc.md/#preliminary-steps).
    - The setup of the OpenID connect client is described on the [Setup OpenID Client](1-setup-oidc.md) page.
 2. VIDchain supports two scenarios to exchange credentials such as first the mobile app to web app and second the mobile app to mobile app.
-   - The integration for web apps is covered in the [Integration for Webapps](2-integration-webapps.md) integration guide.
-   - The mobile app to mobile app scenario is covered in the [Integraion in the App to App Case](3-integration-app2app.md) integration guide.
+   - The integration for web apps is covered in the [Integration for Webapps](2-integration-vidconnect.md) integration guide.
+   - The mobile app to mobile app scenario is covered in the [Integraion in the App to App Case](3-integration-vidwallet.md) integration guide.
 3. The eIDAS bridge integration is covered in the [Integration of the eIDAS Bridge](4-integration-eidasbridge.md) page.

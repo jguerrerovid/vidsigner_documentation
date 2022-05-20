@@ -1,6 +1,6 @@
 ---
-id: integration-app2app
-title: Integration in the App to App Case
+id: integration-vidwallet
+title: Integration of VIDwallet
 ---
 
 # Requesting credentials in the wallet from your app (app2app)

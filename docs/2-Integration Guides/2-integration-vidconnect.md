@@ -1,6 +1,6 @@
 ---
-id: integration-webapp
-title: Integration for Webapps
+id: integration-vidconnect
+title: Integration of VIDconnect
 ---
 
 # Tutorial - Integrate your web or webapp with VIDchain
