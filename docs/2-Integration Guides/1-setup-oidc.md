@@ -12,7 +12,7 @@ In order to be able to setup the OpenID client, and identifier, a so-called dece
 ### Register the Entity at VIDchain
 
 :::tip
-The VIDchain team supports the clients creating and registering an entity. Please contact [support@vidchain.net](mailto:support@vidchain.net) for support.
+The VIDchain team supports the clients creating and registering an entity at VIDchain. Please contact [support@vidchain.net](mailto:support@vidchain.net) for support.
 :::
 
 :::note
@@ -105,13 +105,15 @@ The `accessToken` is the bearer token that needs to be included in calls to prot
 
 VIDchain supports the _OIDC Authorization Code Flow with or without PKCE_. The following information are required to register the client at VIDchain. Please provide these data by contacting the VIDchain support team [support@vidchain.net](mailto:support@vidchain.net).
 
+### Example setup of an OpenID Connect Client
+
+This section details the example configuration of an OpenID client using Typescript and the [JSO client](https://www.npmjs.com/package/jso):
+
 - `client_id` : The client id is a string to uniquely identify your client when making calls to the OIDC provider.
 - `client_secret`: The client secret is used to authenticate the client to OIDC Provider.
 - `redirect_uri`: This URL defines the location where the OIDC Provider should redirect the user after the authentication flow is finished.
 - (optional) `name`: This optional attribute defines the name of the entity displayed when logging in.
 - (optional) `logo` : This optional attribute defines the image that will appear when user is logging in.
-
-An example of OpenID client creation using Typescript and the [JSO client](https://www.npmjs.com/package/jso):
 
 ```javascript
 import { JSO, Popup } from "jso";
