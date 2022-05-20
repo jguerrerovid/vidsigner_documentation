@@ -44,7 +44,7 @@ Before receiving the access token, an assertion has to be created. This assertio
 
 #### Create an Assertion
 
-To get the access token, first create an `assertion` JWT token and encode it in `base64`.
+To get the access token, first create an `assertion` that is a JSON token encoded in `base64`.
 
 :::info
 The assertion is required to request the access token. It has to be placed in the obtain bearer token request, see [Obtain Bearer Token](#obtain-bearer-token).  
@@ -83,10 +83,14 @@ The fields of the payload are the following:
 ```json
 {
   "grantType": "urn:ietf:params:oauth:grant-type:jwt-bearer",
-  "assertion": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+  "assertion": "eyJpc3MiOiJFeGFtcGxlIFVudmllcnNpdHkiLCJhdWQiOiJ2aWRjaGFpbi1hcGkiLCJub25jZSI6InotMDQyN2RjMTIzNDU2IiwiYXBpS2V5IjoiMTExMTNkZWYtMjIyMi0zMzMzLTQ0NDQtMTIzNDU2Nzg5MCJ9",
   "scope": "vidchain profile entity"
 }
 ```
+
+:::note
+The assertion is a JSON encoded in `base64` defined in section [Create an Assertion](#create-an-assertion).
+:::
 
 An example response is shown below:
 
