@@ -16,15 +16,27 @@ In order to be able to setup the OpenID client, and identifier, a so-called dece
 - **Retrieving the API Key** After the entity was created at VIDchain - by the VIDchain team - the API key is sent to the VIDchain client. This API key is required to be able to interact with the APIs provided by VIDchain.
 - **Creating a DID:** The communication with VIDchain requires the information what DID method is used. [Read more about DIDs and DID methods here.](https://www.w3.org/TR/did-core/)
 
-### API Access Token
-
-Before receiving the access token, an assertion has to be created. This assertion contains attributes and will be part of requesting the token. The assertion creation is detailed in the section [Create an Assertion](#create-an-assertion).
+### Authentication towards the API
 
 In order to authenticate towards the API, VIDchain uses the _Bearer Token based Http authentication scheme_. The bearer token is required to use the API provided by VIDchain. All requests to the API must contain the bearer token. Note that the token is only valid for 15 minutes and has to be refreshed, if needed, within this time. Section [Obtain a Bearer Token](#obtain-a-bearer-token) describes the steps on how to get the access token.
 
+:::info
+VIDchain uses the _Bearer Token based Http authentication scheme_ for the client authentication towards the API.
+:::
+
+:::note
+The bearer token is only valid for 15 minutes and should be refreshed during this time.
+:::
+
+Before receiving the access token, an assertion has to be created. This assertion contains attributes and will be part of requesting the token. The assertion creation is detailed in the section [Create an Assertion](#create-an-assertion).
+
 #### Create an Assertion
 
-To get the access token, first create an `assertion` JWT token and encode it in `base64`:
+To get the access token, first create an `assertion` JWT token and encode it in `base64`.
+
+:::info
+The assertion is required to request the access token. It has to be placed in the obtain access token request.  
+:::
 
 The assertion payload contains the following fields:
 
