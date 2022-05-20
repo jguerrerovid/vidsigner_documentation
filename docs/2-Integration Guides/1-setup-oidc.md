@@ -74,6 +74,12 @@ And the assertion must be created using the following format:
 
 To get the bearer token, a `POST` request has to be sent to the `/api/v1/sessions` endpoint with the following payload:
 
+The fields of the payload are the following:
+
+- `grantType` The grant type specifies the grant type of the token, which is defined in our case as `urn:ietf:params:oauth:grant-type:jwt-bearer`.
+- `scope` The scope describes the OpenID Connect scope which is in our case `vidchain profile entity`.
+- `assertion` The assertion field has to contain as value the previous created assertion, described in section [Create an Assertion](#create-an-assertion).
+
 ```json
 {
   "grantType": "urn:ietf:params:oauth:grant-type:jwt-bearer",
@@ -81,12 +87,6 @@ To get the bearer token, a `POST` request has to be sent to the `/api/v1/session
   "scope": "vidchain profile entity"
 }
 ```
-
-The fields of the payload are the following:
-
-- `grantType` The grant type specifies the grant type of the token, which is defined in our case as `urn:ietf:params:oauth:grant-type:jwt-bearer`.
-- `scope` The scope describes the OpenID Connect scope which is in our case `vidchain profile entity`.
-- `assertion` The assertion field has to contain as value the previous created assertion, described in section [Create an Assertion](#create-an-assertion).
 
 An example response is shown below:
 
@@ -101,7 +101,7 @@ An example response is shown below:
 
 The `accessToken` is the bearer token that needs to be included in calls to protected API endpoints.
 
-## Set Up the OIDC Client
+## OpenID Connect Flow
 
 VIDchain supports the _OIDC Authorization Code Flow with or without PKCE_. The following information are required to register the client at VIDchain. Please provide these data by contacting the VIDchain support team [support@vidchain.net](mailto:support@vidchain.net).
 
