@@ -37,7 +37,7 @@ VIDchain uses the _Bearer Token based Http authentication scheme_ for the client
 :::
 
 :::note
-The bearer token is only valid for 15 minutes and should be refreshed during this time for permanent usage.
+The bearer token is only valid for 15 minutes and should be refreshed during this time for continuously usage.
 :::
 
 Before receiving the access token, an assertion has to be created. This assertion contains attributes and will be part of requesting the token. The assertion creation is detailed in the section [Create an Assertion](#create-an-assertion).
@@ -110,7 +110,7 @@ VIDchain supports the _OIDC Authorization Code Flow with or without PKCE_. The f
 This section details the example configuration of an OpenID client using Typescript and the [JSO client](https://www.npmjs.com/package/jso):
 
 - `client_id` : The client id is a string to uniquely identify your client when making calls to the OIDC provider.
-- `client_secret`: The client secret is used to authenticate the client to OIDC Provider.
+- `client_secret`: The client secret is used to authenticate the client to OIDC provider.
 - `redirect_uri`: This URL defines the location where the OIDC Provider should redirect the user after the authentication flow is finished.
 - (optional) `name`: This optional attribute defines the name of the entity displayed when logging in.
 - (optional) `logo` : This optional attribute defines the image that will appear when user is logging in.
