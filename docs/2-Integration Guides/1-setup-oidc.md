@@ -25,7 +25,7 @@ The entity registration at VIDchain requires three paramenters such as the DID, 
 - **Creating a DID:** The communication with VIDchain requires the information what DID method is used. [Read more about DIDs and DID methods here.](https://www.w3.org/TR/did-core/)
 
 :::info
-VIChain supports currently the following DID methods such as `did:ethr`, `did:ebsi` `did:ala` and `did:key`.
+VIChain supports currently the following DID methods such as Ethereum `did:ethr`, EBSI `did:ebsi`, Alastria `did:ala`, and the ledger-less `did:key` method.
 :::
 
 ### Authentication to the API
