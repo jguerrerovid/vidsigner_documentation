@@ -11,12 +11,24 @@ In order to be able to setup the OpenID client, and identifier, a so-called dece
 
 ### Register the Entity at VIDchain
 
+:::tip
+The VIDchain team supports the clients creating and registering an entity. Please contact [support@vidchain.net](mailto:support@vidchain.net) for support.
+:::
+
+:::note
+The entity registration at VIDchain requires three paramenters such as the DID, OpenID connect client ID and the API key.
+:::
+
 - **Creating an Entity at VIDchain:** An entity represents a party that will be registered at VIDchain. The entity creation process is performed by the VIDchain team for the customers and users of VIDchain. Please contact the VIDchain support team [support@vidchain.net](mailto:support@vidchain.net) for your entity creation.
 - **OpenID Connect Client ID:** The client ID is a domain unique identifier for a specific client. This client ID has to be registered at VIDchain so that OpenID connect protocol can be performed.
 - **Retrieving the API Key** After the entity was created at VIDchain - by the VIDchain team - the API key is sent to the VIDchain client. This API key is required to be able to interact with the APIs provided by VIDchain.
 - **Creating a DID:** The communication with VIDchain requires the information what DID method is used. [Read more about DIDs and DID methods here.](https://www.w3.org/TR/did-core/)
 
-### Authentication towards the API
+:::info
+VIChain supports currently the following DID methods such as `did:ethr`, `did:ebsi` `did:ala` and `did:key`.
+:::
+
+### Authentication to the API
 
 In order to authenticate towards the API, VIDchain uses the _Bearer Token based Http authentication scheme_. The bearer token is required to use the API provided by VIDchain. All requests to the API must contain the bearer token. Note that the token is only valid for 15 minutes and has to be refreshed, if needed, within this time. Section [Obtain a Bearer Token](#obtain-a-bearer-token) describes the steps on how to get the access token.
 
@@ -25,7 +37,7 @@ VIDchain uses the _Bearer Token based Http authentication scheme_ for the client
 :::
 
 :::note
-The bearer token is only valid for 15 minutes and should be refreshed during this time.
+The bearer token is only valid for 15 minutes and should be refreshed during this time for permanent usage.
 :::
 
 Before receiving the access token, an assertion has to be created. This assertion contains attributes and will be part of requesting the token. The assertion creation is detailed in the section [Create an Assertion](#create-an-assertion).
