@@ -35,7 +35,7 @@ Before receiving the access token, an assertion has to be created. This assertio
 To get the access token, first create an `assertion` JWT token and encode it in `base64`.
 
 :::info
-The assertion is required to request the access token. It has to be placed in the obtain access token request.  
+The assertion is required to request the access token. It has to be placed in the obtain bearer token request, see [Obtain Bearer Token](#obtain-bearer-token).  
 :::
 
 The assertion payload contains the following fields:
@@ -58,7 +58,7 @@ And the assertion must be created using the following format:
 }
 ```
 
-#### Obtain a Bearer Token
+#### Obtain Bearer Token
 
 To get the bearer token, a `POST` request has to be sent to the `/api/v1/sessions` endpoint with the following payload:
 
