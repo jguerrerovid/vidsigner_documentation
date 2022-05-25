@@ -1,6 +1,6 @@
 ---
 id: vidcredential
-title: VIDcredential
+title: VIDcredentials
 ---
 
 VIDcredentials is a component of VIDchain that is responsible for managing credentials and related services by providing an public API. The VIDcredentials components interacts with external parties such as the credential issuer, but also with VIDchain components such as the VIDchain's backend depicted in the figure below.

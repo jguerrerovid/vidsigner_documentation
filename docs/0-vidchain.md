@@ -14,7 +14,7 @@ This documentation presents several layer of information starting with general i
 1. [VIDchain](0-vidchain.md): This page presents an overview of VIDchain including its components.
 2. [Components](1-Components/0-vidcredential.md): The important components are detailed in the specific components section.
 3. [Integration Guides](2-Integration%20Guides/1-setup-oidc.md): The integration guides detail the necessary steps for the integration of our services into target systems.
-4. [API Specifications](https://docs.vidchain.net/vidchain-openapi): The integration guides are supported by detailed API specification.
+4. [OpenAPIs Specifications](https://docs.vidchain.net/vidcredentials-openapi): The integration guides are supported by detailed API specification.
 
 ## Main Features
 
@@ -41,10 +41,10 @@ To highlight the advantages of using VIDchain as SSI services provider, we list 
 
 VIDchain is composed of different building blocks depicted in the architecture figure and listed below:
 
-- [VIDcredentials](1-Components/0-vidcredential.md), this component's main purpose is to handle the credential lifecycle as well as credential related data. Handling credentials includes creating, signing and verifying verifiable credentials, but also managing schemas and the revocation management.
-- [VIDconnect](1-Components/1-vidconnect.md), an OpenID Connect provider that is able to perform a DID authentication process. The OpenID Connect SIOP library, a Typescript library, that you can use from your app to exchange credentials with the VIDwallet.
-- [VIDwallet](1-Components/2-vidwallet.md), a mobile application used by end-users with the main purpose to manage and store their key matrial and personal information such as identifiers and credentials.
-- [eIDAS Bridge](1-Components/3-eidas-bridge.md), the eIDAS Bridge is a project that aims to bridge legal entities based on X509 certificates with W3C based verfiable credentials.
+- [VIDcredentials](1-Components/0-vidcredential.md): this component's main purpose is to handle the credential lifecycle as well as credential related data. Handling credentials includes creating, signing and verifying verifiable credentials, but also managing schemas and the revocation management.
+- [VIDconnect](1-Components/1-vidconnect.md): an OpenID Connect provider that is able to perform a DID authentication process. The OpenID Connect SIOP library, a Typescript library, that you can use from your app to exchange credentials with the VIDwallet.
+- [VIDwallet](1-Components/2-vidwallet.md): a mobile application used by end-users with the main purpose to manage and store their key matrial and personal information such as identifiers and credentials.
+- [eIDAS Bridge](1-Components/3-eidas-bridge.md): the eIDAS Bridge is a project that aims to bridge legal entities based on X509 certificates with W3C based verfiable credentials.
 
 ![vidchain-components](_media/architecture.png)
 
