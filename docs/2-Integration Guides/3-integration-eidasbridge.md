@@ -1,6 +1,6 @@
 ---
 id: integration-eidasbridge
-title: Integration of the eIDAS Bridge
+title: Integration of eIDAS Bridge
 ---
 
 Using the eIDAS Bridge service is really easy. This service offers an API that will allow you to store your certificate, associating the certificate to your did as entity and sign a credential using your certificate. Plus, you can validate this kind of signature within credentials in the case you act as a verifier.
@@ -34,7 +34,7 @@ where `assertion` is a base64 JSON containing the following information:
 
 The response body of the request is the access token that you will have to **set it as bearer token in the requests mentioned below**.
 
-Please notice this is an authenticated service. Therefore, the `iss` and the `apiKey` details have to be provided by Validated ID. Please [contact us](mailto:vidchain@validatedid.com) to request access.
+Please notice this is an authenticated service. Therefore, the `iss` and the `apiKey` details have to be provided by Validated ID. Please contact VIDchain support team [support@vidchain.net](mailto:support@vidchain.net) to request access.
 
 ## For Issuers
 
