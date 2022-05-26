@@ -1,6 +1,6 @@
 ---
 id: integration-example
-title: Integration of VIDwallet
+title: Integration tutorial
 ---
 
 # Tutorial - Integrate your web or webapp with VIDchain
