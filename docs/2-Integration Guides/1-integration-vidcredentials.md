@@ -1,5 +1,5 @@
 ---
-id: setup-oidc
+id: integration-vidcredentials
 title: Integration of VIDcredentials
 ---
 

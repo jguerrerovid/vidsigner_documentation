@@ -24,9 +24,9 @@ In fact, in this sense, a Certification Authority could participate in the Trust
 
 Regarding the capacity of recognition by the counterparts who want to verify the presentation of a credential, the stamping component itself is verifiable through the eIDAS Bridge, facilitating the recognition of the source entity that has signed the credential, in the same sense given to the act of sealing in PKI. But allowing later to take advantage of the programmatic nature of verifiable credentials for process automation.
 
-## Processes 
+## Processes
 
-The eIDAS Bridge supports three main processes focusing on assosiating a DID to a certificate, sealing a VC with this certificate, and finally the verification of a sealed VC. The process flows are illustrated below. 
+The eIDAS Bridge supports three main processes focusing on assosiating a DID to a certificate, sealing a VC with this certificate, and finally the verification of a sealed VC. The process flows are illustrated below.
 
 ### Step 1: Certificate Storage for DID Association
 
@@ -44,7 +44,3 @@ The issuer requests to sign a VC using his/her previously stored certificate and
 ![step3-eidas](../_media/step3-eidas.jpg)
 
 The verifier sends a VC with CAdES signature to be validated and the API provides the validation result.
-
-
-
-

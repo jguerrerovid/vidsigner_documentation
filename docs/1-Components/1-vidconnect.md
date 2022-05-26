@@ -7,14 +7,6 @@ VIDconnect is the component that implements the identity protocols aiming to "co
 
 VIDconnect supports different workflows such as Webapp to App, and the App to App workflow.
 
-## Integration Guides
-
-Our documentation provides integration guides in order for developers to integrate our components into their systems.
-
-- [Setting up the OpenID Connect Client](../2-Integration%20Guides/1-setup-oidc.md)
-- [Webapp Integration](../2-Integration%20Guides/2-integration-vidconnect.md)
-- [App to App Integration](../2-Integration%20Guides/3-integration-vidwallet.md)
-
 ## Endpoints
 
 <!--

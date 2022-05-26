@@ -13,7 +13,7 @@ This documentation presents several layer of information starting with general i
 
 1. [VIDchain](0-vidchain.md): This page presents an overview of VIDchain including its components.
 2. [Components](1-Components/0-vidcredential.md): The important components are detailed in the specific components section.
-3. [Integration Guides](2-Integration%20Guides/1-setup-oidc.md): The integration guides detail the necessary steps for the integration of our services into target systems.
+3. [Integration Guides](2-Integration%20Guides/0-overview.md): The integration guides detail the necessary steps for the integration of our services into target systems.
 4. [OpenAPIs Specifications](https://docs.vidchain.net/vidcredentials-openapi): The integration guides are supported by detailed API specification.
 
 ## Main Features
@@ -26,7 +26,7 @@ To highlight the advantages of using VIDchain as SSI services provider, we list 
 - VIDchain offers a **passwordless authentication flow**, which increases not only the user-experience but also the security since users tend to resuse username-password combinations or use-easy-to-guess passwords.
 - VIDchain services can be **integrated and used on different platforms** such as in the web or on a webapp or mobile app.
 - VIDchain offers a service to **manage and handle credentials including, creating, signing, issuing, storing, revoking, exchanging and presenting verifiable credentials**.
-- VIDchain **binds legal entities to verifiable credentials**. Legal entities such as natural and legal persons are often represented by X509 certificates. This binding is achieved by our so-called [eIDAS bridge](1-Components/3-eidas-bridge.md). By sealing the verifiable credential with a qualified certificate, also **legal value is added to the verifiable credential** and can be verified afterwards.
+- VIDchain **binds legal entities to verifiable credentials**. Legal entities such as natural and legal persons are often represented by X509 certificates. This binding is achieved by our so-called [eIDAS bridge](1-Components/2-eidas-bridge.md). By sealing the verifiable credential with a qualified certificate, also **legal value is added to the verifiable credential** and can be verified afterwards.
 - Users might own a personal certificate containing the users' attributes. VIDchain offers a service, called [certbridge](https://certbridge.vidchain.net/), to **transform a X509 certificate into a valid verifiable credential**.
 - Users can **create credentials based on different sources** such as from:
   - national IDs like passports, national ID cards, or certificates
@@ -43,8 +43,8 @@ VIDchain is composed of different building blocks depicted in the architecture f
 
 - [VIDcredentials](1-Components/0-vidcredential.md): this component's main purpose is to handle the credential lifecycle as well as credential related data. Handling credentials includes creating, signing and verifying verifiable credentials, but also managing schemas and the revocation management.
 - [VIDconnect](1-Components/1-vidconnect.md): an OpenID Connect provider that is able to perform a DID authentication process. The OpenID Connect SIOP library, a Typescript library, that you can use from your app to exchange credentials with the VIDwallet.
-- [VIDwallet](1-Components/2-vidwallet.md): a mobile application used by end-users with the main purpose to manage and store their key matrial and personal information such as identifiers and credentials.
-- [eIDAS Bridge](1-Components/3-eidas-bridge.md): the eIDAS Bridge is a project that aims to bridge legal entities based on X509 certificates with W3C based verfiable credentials.
+- [eIDAS Bridge](1-Components/2-eidas-bridge.md): the eIDAS Bridge is a project that aims to bridge legal entities based on X509 certificates with W3C based verfiable credentials.
+- [VIDwallet](1-Components/3-vidwallet.md): a mobile application used by end-users with the main purpose to manage and store their key matrial and personal information such as identifiers and credentials.
 
 ![vidchain-components](_media/architecture.png)
 
