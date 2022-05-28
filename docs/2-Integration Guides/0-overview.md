@@ -3,31 +3,33 @@ id: guides-overview
 title: Overview
 ---
 
-## Before starting
+## Introduction
 
-It is better to walk before start running. If you have not read the first sections yet, please see components descriptions for any of the services you may be interested. These pages will provide you the background you need to start your integration.
+VIDchain offers several components such as VIDcredentials, VIDconnect, VIDwallet, and the eIDAS bridge. We provide integration guides to support our customers to integrate our components into their services.
+
+More information on the components are available on the specific components page:
 
 - [VIDcredentials](../1-Components/0-vidcredential.md)
 - [VIDconnect](../1-Components/1-vidconnect.md)
 - [eIDAS Bridge](../1-Components/2-eidas-bridge.md)
 - [VIDwallet](../1-Components/3-vidwallet.md)
 
-## Integration guidelines
+## Integration Guides
 
-In this section you can find direct access to the integration guides to all our components. We provide integration guides to support our customers to integrate our components into their services. In other words, the integration guides provide the necessary information to integrate the VIDchain component into a target system. Then, if you are an integrator, feel free to pick the integration guide you need and follow the step-by-step guidelines provided for your integration process.
+The integration guides provide the necessary information to integrate the VIDchain component into a target system. The provided information guide integrators step-by-step through the integration process.
 
 - [VIDcredentials integration guide](1-integration-vidcredentials.md)
 - [VIDconnect integration guide](2-integration-vidconnect.md)
 - [eIDAS Bridge integration guide](3-integration-eidasbridge.md)
 - [VIDwallet integration guide](4-integration-vidwallet.md)
 
-# Integration example
+## Integration example
 
-Aside from specific integration guides, an [integration example](5-integration-example.md) is provided as a final subsection to see a typical integration scenario where multiple services are used in the same use case. You can take the journey presented in the integration example as an inspiration for your use occurrence.
+Aside from specific integration guides, an [integration example](5-integration-example.md) is provided as a final subsection to see a typical integration scenario where multiple services are used in one same use case.
 
-## More techie specs
+## API Specification
 
-Remember that for those who need more detailed APIs descriptions they are available under:
+The API specifications are available under the following links:
 
 - [OpenAPI VIDCredentials](https://docs.vidchain.net/vidcredentials-openapi)
 - [OpenAPI VIDconnect](https://docs.vidchain.net/vidconnect-openapi)
