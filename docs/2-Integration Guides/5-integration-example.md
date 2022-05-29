@@ -1,6 +1,6 @@
 ---
 id: integration-example
-title: Integration tutorial
+title: Integration Tutorial
 ---
 
 # Tutorial - Integrate your web or webapp with VIDchain
