@@ -11,8 +11,8 @@
   },
   "servers": [
     {
-      "url": "https://dev.vidchain.net",
-      "description": "VIDchain Development Environment"
+      "url": "https://staging.vidchain.net",
+      "description": "VIDchain Staging Environment"
     }
   ],
   "tags": [

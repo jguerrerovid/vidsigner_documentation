@@ -11,7 +11,7 @@ const ENVIRONMENT = ["prod", "staging", "dev", "local"].includes(
   process.env.REACT_APP_ENV
 )
   ? process.env.REACT_APP_ENV
-  : "test";
+  : "staging";
 
 export interface ApiConfig {
   openapis: APIObject[];
