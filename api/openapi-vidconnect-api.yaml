@@ -19,7 +19,7 @@ paths:
       tags:
         - OAuth2 Service
       summary: Redirect the user to VIDconnect
-      description: The client redirects the user to VIDconnect.
+      description: The client redirects the user to VIDconnect. Please check how to generate the values provided as query parameters below in the [integration guide](/docs/Integration%20Guides/integration-vidconnect).
       parameters:
         - in: query
           name: response_type
@@ -192,9 +192,15 @@ components:
           type: string
           example: "https://swaggerEntity.com/callback"
         grant_type:
-          description: "Grant type"
+          description: "The kind of authorization provided. Set always 'authorization_code'"
           type: string
           example: "authorization_code"
+      required:
+        - code
+        - client_id
+        - client_secret
+        - redirect_uri
+        - grant_type
   examples:
     BadRequest:
       value:
