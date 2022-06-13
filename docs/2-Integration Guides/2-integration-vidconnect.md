@@ -73,6 +73,6 @@ this.client = new JSO(configFile);
 
 ## Demo example
 
-In order to provide more examples, we have a public repository with demos that show how to interact with VIDconnect.
+In order to provide more examples, we have a public repository with a demo that show how to interact with VIDconnect and VIDcredentials as well.
 
-- [VIDchain demo webapps that show how to integrate with VIDchain APIs](https://github.com/validatedid/VIDchain-demo-v2)
+- [VIDchain demo webapps that show how to integrate with VIDchain APIs](https://github.com/validatedid/vidchain-integration-example)

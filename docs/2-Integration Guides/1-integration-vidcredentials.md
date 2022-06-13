@@ -120,6 +120,12 @@ Both possible fields of the body are optional, namely:
 - `callbackUrl`: (optional) This callback URL describes the redirect location for VIDchain when finalising an async process like a presentation request. Note that this is **not related to VIDconnect callback** but the entity backend endpoint where the VIDChain APIs will send back the endpoint where to retrieve the verifiable presentation.
 - `icon`: (optional) This field expects the base64 encoded icon that should be displayed in VIDwallet. The app will see this icon in the credentials issued by your entity.
 
+## Demo example
+
+In order to provide more examples, we have a public repository with a demo that show how to interact with VIDconnect and VIDcredentials as well.
+
+- [VIDchain demo webapps that show how to integrate with VIDchain APIs](https://github.com/validatedid/vidchain-integration-example)
+
 <!--
 
 ## 4. Define the contents of the Verifiable Credentials
